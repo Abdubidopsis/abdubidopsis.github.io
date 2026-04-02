@@ -28,6 +28,153 @@
     "text": "A Personal Note\nThe mystery of human existence lies not in just staying alive, but in finding something to live for.\nF. Dostoevsky"
   },
   {
+    "objectID": "projects/project-gwas-quinoa.html",
+    "href": "projects/project-gwas-quinoa.html",
+    "title": "Genome-Wide Association in Quinoa",
+    "section": "",
+    "text": "Short summary of the project objective and biological question."
+  },
+  {
+    "objectID": "projects/project-gwas-quinoa.html#overview",
+    "href": "projects/project-gwas-quinoa.html#overview",
+    "title": "Genome-Wide Association in Quinoa",
+    "section": "",
+    "text": "Short summary of the project objective and biological question."
+  },
+  {
+    "objectID": "projects/project-gwas-quinoa.html#your-role",
+    "href": "projects/project-gwas-quinoa.html#your-role",
+    "title": "Genome-Wide Association in Quinoa",
+    "section": "Your Role",
+    "text": "Your Role\nDescribe your contributions (analysis, data curation, writing, supervision)."
+  },
+  {
+    "objectID": "projects/project-gwas-quinoa.html#methods",
+    "href": "projects/project-gwas-quinoa.html#methods",
+    "title": "Genome-Wide Association in Quinoa",
+    "section": "Methods",
+    "text": "Methods\n\nGenotyping and variant filtering\nGWAS model setup\nCovariate correction and interpretation"
+  },
+  {
+    "objectID": "projects/project-gwas-quinoa.html#results",
+    "href": "projects/project-gwas-quinoa.html#results",
+    "title": "Genome-Wide Association in Quinoa",
+    "section": "Results",
+    "text": "Results\nAdd key figures, tables, and bullet-point findings."
+  },
+  {
+    "objectID": "projects/project-gwas-quinoa.html#links",
+    "href": "projects/project-gwas-quinoa.html#links",
+    "title": "Genome-Wide Association in Quinoa",
+    "section": "Links",
+    "text": "Links\n\nRepository: Add repo link\nReport or manuscript: Add document link"
+  },
+  {
+    "objectID": "projects/project-audpc-pipeline.html",
+    "href": "projects/project-audpc-pipeline.html",
+    "title": "Disease Phenotyping and AUDPC Analysis",
+    "section": "",
+    "text": "Summarize the disease scoring workflow and experimental context."
+  },
+  {
+    "objectID": "projects/project-audpc-pipeline.html#overview",
+    "href": "projects/project-audpc-pipeline.html#overview",
+    "title": "Disease Phenotyping and AUDPC Analysis",
+    "section": "",
+    "text": "Summarize the disease scoring workflow and experimental context."
+  },
+  {
+    "objectID": "projects/project-audpc-pipeline.html#data",
+    "href": "projects/project-audpc-pipeline.html#data",
+    "title": "Disease Phenotyping and AUDPC Analysis",
+    "section": "Data",
+    "text": "Data\nList dataset source, format, and sampling details."
+  },
+  {
+    "objectID": "projects/project-audpc-pipeline.html#methods",
+    "href": "projects/project-audpc-pipeline.html#methods",
+    "title": "Disease Phenotyping and AUDPC Analysis",
+    "section": "Methods",
+    "text": "Methods\n\nReplicate-level AUDPC calculations\nBLUP estimation by accession\nQuality checks and visualization"
+  },
+  {
+    "objectID": "projects/project-audpc-pipeline.html#results",
+    "href": "projects/project-audpc-pipeline.html#results",
+    "title": "Disease Phenotyping and AUDPC Analysis",
+    "section": "Results",
+    "text": "Results\nDocument major outputs and interpretation."
+  },
+  {
+    "objectID": "projects/project-audpc-pipeline.html#links",
+    "href": "projects/project-audpc-pipeline.html#links",
+    "title": "Disease Phenotyping and AUDPC Analysis",
+    "section": "Links",
+    "text": "Links\n\nRepository: Add repo link\nSlides or notes: Add document link"
+  },
+  {
+    "objectID": "projects/index.html",
+    "href": "projects/index.html",
+    "title": "Projects",
+    "section": "",
+    "text": "A curated list of research and data projects."
+  },
+  {
+    "objectID": "projects/index.html#featured-projects",
+    "href": "projects/index.html#featured-projects",
+    "title": "Projects",
+    "section": "Featured Projects",
+    "text": "Featured Projects\n\nGenome-Wide Association in Quinoa\nDisease Phenotyping and AUDPC Analysis\nPopulation Structure and PCA Workflow"
+  },
+  {
+    "objectID": "projects/index.html#add-a-new-project",
+    "href": "projects/index.html#add-a-new-project",
+    "title": "Projects",
+    "section": "Add a New Project",
+    "text": "Add a New Project\n\nCreate a new .qmd file in projects/.\nAdd the project link in this page.\nCommit and push to main."
+  },
+  {
+    "objectID": "projects/project-popgen-pca.html",
+    "href": "projects/project-popgen-pca.html",
+    "title": "Population Structure and PCA Workflow",
+    "section": "",
+    "text": "Describe the objective of population structure analysis."
+  },
+  {
+    "objectID": "projects/project-popgen-pca.html#overview",
+    "href": "projects/project-popgen-pca.html#overview",
+    "title": "Population Structure and PCA Workflow",
+    "section": "",
+    "text": "Describe the objective of population structure analysis."
+  },
+  {
+    "objectID": "projects/project-popgen-pca.html#methods",
+    "href": "projects/project-popgen-pca.html#methods",
+    "title": "Population Structure and PCA Workflow",
+    "section": "Methods",
+    "text": "Methods\n\nVariant QC and file preparation\nPrincipal component analysis\nCovariate table construction"
+  },
+  {
+    "objectID": "projects/project-popgen-pca.html#results",
+    "href": "projects/project-popgen-pca.html#results",
+    "title": "Population Structure and PCA Workflow",
+    "section": "Results",
+    "text": "Results\nAdd PCA plots and concise interpretation of clusters."
+  },
+  {
+    "objectID": "projects/project-popgen-pca.html#reproducibility",
+    "href": "projects/project-popgen-pca.html#reproducibility",
+    "title": "Population Structure and PCA Workflow",
+    "section": "Reproducibility",
+    "text": "Reproducibility\nInclude commands or script names used in the analysis."
+  },
+  {
+    "objectID": "projects/project-popgen-pca.html#links",
+    "href": "projects/project-popgen-pca.html#links",
+    "title": "Population Structure and PCA Workflow",
+    "section": "Links",
+    "text": "Links\n\nRepository: Add repo link\nNotebook or report: Add document link"
+  },
+  {
     "objectID": "about.html",
     "href": "about.html",
     "title": "About",
