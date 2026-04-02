@@ -53,10 +53,12 @@ body {
 .social-link {
   display: inline-flex;
   align-items: center;
-  gap: 0.45rem;
-  padding: 0.35rem 0.7rem 0.35rem 0.35rem;
+  justify-content: center;
+  width: 2.35rem;
+  height: 2.35rem;
+  padding: 0;
   border: 1px solid rgba(246, 243, 234, 0.45);
-  border-radius: 999px;
+  border-radius: 50%;
   text-decoration: none;
   color: #f6f3ea;
   background: rgba(246, 243, 234, 0.1);
@@ -73,10 +75,9 @@ body {
 }
 
 .social-icon-img {
-  width: 1.05rem;
-  height: 1.05rem;
-  vertical-align: middle;
-  margin-right: 0.42rem;
+  width: 1.2rem;
+  height: 1.2rem;
+  display: block;
 }
 
 .profile-photo {
@@ -113,6 +114,7 @@ ul li {
   }
 
   .social-link {
-    font-size: 0.94rem;
+    width: 2.15rem;
+    height: 2.15rem;
   }
 }

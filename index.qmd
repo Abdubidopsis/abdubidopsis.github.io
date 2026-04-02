@@ -21,11 +21,11 @@ Email: [abdubidopsis@users.noreply.github.com](mailto:abdubidopsis@users.noreply
 GitHub: [Abdubidopsis](https://github.com/Abdubidopsis)
 
 ::: {.social-links}
-[![](icons/linkedin.svg){.social-icon-img fig-alt="LinkedIn"} LinkedIn](https://de.linkedin.com/in/abdul363){.social-link target="_blank" rel="noopener noreferrer"}
+[![](icons/linkedin.svg){.social-icon-img fig-alt="LinkedIn"}](https://de.linkedin.com/in/abdul363){.social-link target="_blank" rel="noopener noreferrer" title="LinkedIn" aria-label="LinkedIn"}
 
-[![](icons/x.svg){.social-icon-img fig-alt="X"} X](https://x.com/Abdubidopsis){.social-link target="_blank" rel="noopener noreferrer"}
+[![](icons/x.svg){.social-icon-img fig-alt="X"}](https://x.com/Abdubidopsis){.social-link target="_blank" rel="noopener noreferrer" title="X" aria-label="X"}
 
-[![](icons/google-scholar.svg){.social-icon-img fig-alt="Google Scholar"} Google Scholar](https://scholar.google.com/citations?user=nI0X9CQAAAAJ&hl=en){.social-link target="_blank" rel="noopener noreferrer"}
+[![](icons/google-scholar.svg){.social-icon-img fig-alt="Google Scholar"}](https://scholar.google.com/citations?user=nI0X9CQAAAAJ&hl=en){.social-link target="_blank" rel="noopener noreferrer" title="Google Scholar" aria-label="Google Scholar"}
 :::
 :::
 :::
