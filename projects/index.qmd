@@ -9,45 +9,45 @@ A curated set of research and data projects.
 ::: {.project-grid}
 
 ::: {.project-card}
-![](images/gwas-banner.svg){.project-banner fig-alt="Genome-wide association project banner"}
+[![](images/gwas-banner.svg){.project-banner fig-alt="Genome-wide association project banner"}](images/gwas-banner.svg){.project-banner-link target="_blank" rel="noopener noreferrer" aria-label="Open Genome-wide association project banner in a new tab"}
 
 ### Genome-Wide Association in Quinoa
 
 Association mapping workflow using filtered variants, covariates, and model diagnostics.
 
-<span class="project-tag">GWAS</span>
-<span class="project-tag">Quinoa</span>
-<span class="project-tag">Genomics</span>
+<a class="project-tag-link" href="https://scholar.google.com/scholar?q=GWAS" target="_blank" rel="noopener noreferrer">GWAS</a>
+<a class="project-tag-link" href="https://scholar.google.com/scholar?q=Quinoa" target="_blank" rel="noopener noreferrer">Quinoa</a>
+<a class="project-tag-link" href="https://scholar.google.com/scholar?q=Genomics" target="_blank" rel="noopener noreferrer">Genomics</a>
 
-[Open Project](project-gwas-quinoa.qmd){.project-link}
+<a class="project-link" href="project-gwas-quinoa.qmd" aria-label="Open Genome-Wide Association in Quinoa project"></a>
 :::
 
 ::: {.project-card}
-![](images/audpc-banner.svg){.project-banner fig-alt="AUDPC project banner"}
+[![](images/audpc-banner.svg){.project-banner fig-alt="AUDPC project banner"}](images/audpc-banner.svg){.project-banner-link target="_blank" rel="noopener noreferrer" aria-label="Open AUDPC project banner in a new tab"}
 
 ### Disease Phenotyping and AUDPC Analysis
 
 Phenotype harmonization, replicate handling, BLUP estimation, and disease summary plots.
 
-<span class="project-tag">AUDPC</span>
-<span class="project-tag">BLUP</span>
-<span class="project-tag">Phenotypes</span>
+<a class="project-tag-link" href="https://scholar.google.com/scholar?q=AUDPC" target="_blank" rel="noopener noreferrer">AUDPC</a>
+<a class="project-tag-link" href="https://scholar.google.com/scholar?q=BLUP" target="_blank" rel="noopener noreferrer">BLUP</a>
+<a class="project-tag-link" href="https://scholar.google.com/scholar?q=Phenotypes" target="_blank" rel="noopener noreferrer">Phenotypes</a>
 
-[Open Project](project-audpc-pipeline.qmd){.project-link}
+<a class="project-link" href="project-audpc-pipeline.qmd" aria-label="Open Disease Phenotyping and AUDPC Analysis project"></a>
 :::
 
 ::: {.project-card}
-![](images/pca-banner.svg){.project-banner fig-alt="Population structure PCA project banner"}
+[![](images/pca-banner.svg){.project-banner fig-alt="Population structure PCA project banner"}](images/pca-banner.svg){.project-banner-link target="_blank" rel="noopener noreferrer" aria-label="Open Population structure PCA project banner in a new tab"}
 
 ### Population Structure and PCA Workflow
 
 Variant quality control and principal component analysis for population structure inference.
 
-<span class="project-tag">PCA</span>
-<span class="project-tag">Population Genomics</span>
-<span class="project-tag">QC</span>
+<a class="project-tag-link" href="https://scholar.google.com/scholar?q=PCA" target="_blank" rel="noopener noreferrer">PCA</a>
+<a class="project-tag-link" href="https://scholar.google.com/scholar?q=Population+Genomics" target="_blank" rel="noopener noreferrer">Population Genomics</a>
+<a class="project-tag-link" href="https://scholar.google.com/scholar?q=QC" target="_blank" rel="noopener noreferrer">QC</a>
 
-[Open Project](project-popgen-pca.qmd){.project-link}
+<a class="project-link" href="project-popgen-pca.qmd" aria-label="Open Population Structure and PCA Workflow project"></a>
 :::
 
 :::
