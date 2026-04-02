@@ -20,32 +20,13 @@ Cologne, Germany
 Email: [abdubidopsis@users.noreply.github.com](mailto:abdubidopsis@users.noreply.github.com)  
 GitHub: [Abdubidopsis](https://github.com/Abdubidopsis)
 
-<div class="social-links" aria-label="Social links">
-	<a class="social-link" href="https://de.linkedin.com/in/abdul363" target="_blank" rel="noopener noreferrer">
-		<span class="social-icon" aria-hidden="true">
-			<svg viewBox="0 0 24 24" role="img" focusable="false" xmlns="http://www.w3.org/2000/svg">
-				<path d="M20.45 20.45h-3.56v-5.57c0-1.33-.03-3.04-1.85-3.04c-1.85 0-2.13 1.45-2.13 2.95v5.66H9.35V9h3.42v1.56h.05c.48-.9 1.64-1.85 3.37-1.85c3.6 0 4.26 2.37 4.26 5.45v6.29zM5.34 7.43a2.07 2.07 0 1 1 0-4.14a2.07 2.07 0 0 1 0 4.14zM7.12 20.45H3.56V9h3.56v11.45z"/>
-			</svg>
-		</span>
-		<span>LinkedIn</span>
-	</a>
-	<a class="social-link" href="https://x.com/Abdubidopsis" target="_blank" rel="noopener noreferrer">
-		<span class="social-icon" aria-hidden="true">
-			<svg viewBox="0 0 24 24" role="img" focusable="false" xmlns="http://www.w3.org/2000/svg">
-				<path d="M18.9 2H22l-6.77 7.74L23 22h-6.11l-4.78-6.24L6.66 22H3.56l7.25-8.29L1 2h6.26l4.31 5.69L18.9 2zm-1.07 18.2h1.69L6.32 3.72H4.5L17.83 20.2z"/>
-			</svg>
-		</span>
-		<span>X</span>
-	</a>
-	<a class="social-link" href="https://scholar.google.com/citations?user=nI0X9CQAAAAJ&hl=en" target="_blank" rel="noopener noreferrer">
-		<span class="social-icon" aria-hidden="true">
-			<svg viewBox="0 0 24 24" role="img" focusable="false" xmlns="http://www.w3.org/2000/svg">
-				<path d="M12 2L1 9l11 7l9-5.73V17h2V9L12 2zm0 16l-7-4.45V17c0 2.76 3.13 5 7 5s7-2.24 7-5v-3.45L12 18z"/>
-			</svg>
-		</span>
-		<span>Google Scholar</span>
-	</a>
-</div>
+::: {.social-links}
+[![](icons/linkedin.svg){.social-icon-img fig-alt="LinkedIn"} LinkedIn](https://de.linkedin.com/in/abdul363){.social-link target="_blank" rel="noopener noreferrer"}
+
+[![](icons/x.svg){.social-icon-img fig-alt="X"} X](https://x.com/Abdubidopsis){.social-link target="_blank" rel="noopener noreferrer"}
+
+[![](icons/google-scholar.svg){.social-icon-img fig-alt="Google Scholar"} Google Scholar](https://scholar.google.com/citations?user=nI0X9CQAAAAJ&hl=en){.social-link target="_blank" rel="noopener noreferrer"}
+:::
 :::
 :::
 :::
