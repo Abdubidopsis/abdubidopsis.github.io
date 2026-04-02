@@ -4,28 +4,40 @@
     "href": "index.html",
     "title": "Abdubidopsis",
     "section": "",
-    "text": "Evolutionary and Computational Biologist | Plant Genomics | Data-Driven Biology\nInstitute for Plant Sciences, University of Cologne\nCologne, Germany\nEmail: abdubidopsis@users.noreply.github.com\nGitHub: Abdubidopsis"
+    "text": "Evolutionary and Computational Biologist | Plant Genomics | Data-Driven Biology\nInstitute for Plant Sciences, University of Cologne\nCologne, Germany\nEmail: abdubidopsis@users.noreply.github.com\nGitHub: Abdubidopsis",
+    "crumbs": [
+      "Home"
+    ]
   },
   {
     "objectID": "index.html#my-journey-in-science",
     "href": "index.html#my-journey-in-science",
     "title": "Abdubidopsis",
     "section": "My Journey in Science",
-    "text": "My Journey in Science\nI am interested in how genomes record adaptation across time and space. My work combines evolutionary biology, quantitative genetics, and reproducible data workflows to study biological complexity under changing environments.\nI enjoy building practical pipelines that turn raw sequencing and phenotypic datasets into interpretable biological insights. This includes statistical modeling, machine learning, and careful data curation, especially in crop and ecological genomics.\nTeaching and mentoring are central to how I work. I value clear explanation, open workflows, and helping students connect computation with biological questions."
+    "text": "My Journey in Science\nI am interested in how genomes record adaptation across time and space. My work combines evolutionary biology, quantitative genetics, and reproducible data workflows to study biological complexity under changing environments.\nI enjoy building practical pipelines that turn raw sequencing and phenotypic datasets into interpretable biological insights. This includes statistical modeling, machine learning, and careful data curation, especially in crop and ecological genomics.\nTeaching and mentoring are central to how I work. I value clear explanation, open workflows, and helping students connect computation with biological questions.",
+    "crumbs": [
+      "Home"
+    ]
   },
   {
     "objectID": "index.html#additional-links",
     "href": "index.html#additional-links",
     "title": "Abdubidopsis",
     "section": "Additional Links",
-    "text": "Additional Links\n\nGitHub Projects\nAbout This Website"
+    "text": "Additional Links\n\nGitHub Projects\nAbout This Website",
+    "crumbs": [
+      "Home"
+    ]
   },
   {
     "objectID": "index.html#a-personal-note",
     "href": "index.html#a-personal-note",
     "title": "Abdubidopsis",
     "section": "A Personal Note",
-    "text": "A Personal Note\nThe mystery of human existence lies not in just staying alive, but in finding something to live for.\nF. Dostoevsky"
+    "text": "A Personal Note\nThe mystery of human existence lies not in just staying alive, but in finding something to live for.\nF. Dostoevsky",
+    "crumbs": [
+      "Home"
+    ]
   },
   {
     "objectID": "projects/project-gwas-quinoa.html#overview",
@@ -102,21 +114,30 @@
     "href": "projects/index.html",
     "title": "Projects",
     "section": "",
-    "text": "A curated set of research and data projects."
+    "text": "A curated set of research and data projects.",
+    "crumbs": [
+      "Projects"
+    ]
   },
   {
     "objectID": "projects/index.html#featured-projects",
     "href": "projects/index.html#featured-projects",
     "title": "Projects",
     "section": "Featured Projects",
-    "text": "Featured Projects\n\n\n  \n\nGenome-Wide Association in Quinoa\n\nAssociation mapping workflow using filtered variants, covariates, and model diagnostics.\n\n\nGWAS Quinoa Genomics\n\n\n\n\n  \n\nDisease Phenotyping and AUDPC Analysis\n\nPhenotype harmonization, replicate handling, BLUP estimation, and disease summary plots.\n\n\nAUDPC BLUP Phenotypes\n\n\n\n\n  \n\nPopulation Structure and PCA Workflow\n\nVariant quality control and principal component analysis for population structure inference.\n\n\nPCA Population Genomics QC"
+    "text": "Featured Projects\n\n\n  \n\nGenome-Wide Association in Quinoa\n\nAssociation mapping workflow using filtered variants, covariates, and model diagnostics.\n\n\nGWAS Quinoa Genomics\n\n\n\n\n  \n\nDisease Phenotyping and AUDPC Analysis\n\nPhenotype harmonization, replicate handling, BLUP estimation, and disease summary plots.\n\n\nAUDPC BLUP Phenotypes\n\n\n\n\n  \n\nPopulation Structure and PCA Workflow\n\nVariant quality control and principal component analysis for population structure inference.\n\n\nPCA Population Genomics QC",
+    "crumbs": [
+      "Projects"
+    ]
   },
   {
     "objectID": "projects/index.html#add-a-new-project",
     "href": "projects/index.html#add-a-new-project",
     "title": "Projects",
     "section": "Add a New Project",
-    "text": "Add a New Project\n\nCreate a new .qmd file in projects/.\nCopy one project card block and update title, description, tags, and link.\nCommit and push to main."
+    "text": "Add a New Project\n\nCreate a new .qmd file in projects/.\nCopy one project card block and update title, description, tags, and link.\nCommit and push to main.",
+    "crumbs": [
+      "Projects"
+    ]
   },
   {
     "objectID": "projects/project-popgen-pca.html#overview",
@@ -158,13 +179,19 @@
     "href": "about.html",
     "title": "About",
     "section": "",
-    "text": "This is a simple Quarto website for sharing project context and updates.\nUse this page to describe your project, goals, methods, or contact details."
+    "text": "This is a simple Quarto website for sharing project context and updates.\nUse this page to describe your project, goals, methods, or contact details.",
+    "crumbs": [
+      "About"
+    ]
   },
   {
     "objectID": "about.html#suggested-structure",
     "href": "about.html#suggested-structure",
     "title": "About",
     "section": "Suggested structure",
-    "text": "Suggested structure\n\nA short introduction to the project\nA list of pages or sections you plan to add\nLinks to GitHub, datasets, or reports"
+    "text": "Suggested structure\n\nA short introduction to the project\nA list of pages or sections you plan to add\nLinks to GitHub, datasets, or reports",
+    "crumbs": [
+      "About"
+    ]
   }
 ]
