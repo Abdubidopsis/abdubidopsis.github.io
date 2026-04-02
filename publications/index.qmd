@@ -1,0 +1,36 @@
+---
+title: "Publications"
+subtitle: "Selected research outputs and manuscripts"
+---
+
+## Overview
+
+This page can hold your selected papers, preprints, thesis chapters, posters, and conference contributions.
+
+## Selected Publications
+
+::: {.publication-list}
+
+### Journal articles
+
+- **Add a publication here**. Include authors, year, title, journal, and DOI or URL.
+- **Add another publication here**. Keep the citation style consistent across entries.
+
+### Preprints and manuscripts
+
+- **Add a preprint or manuscript here**. You can link to the repository, arXiv, or journal page.
+
+### Conference presentations and posters
+
+- **Add a talk or poster here**. Include the event name, location, and date.
+
+:::
+
+## Recommended format
+
+Use a short citation, a one-sentence summary of the contribution, and a link to the final version when available.
+
+Example structure:
+
+- **Author, A., Author, B. (2026).** _Title of the paper_. Journal Name. [DOI](https://example.com)
+- **Author, A. (2025).** _Title of the preprint_. [arXiv](https://example.com)
