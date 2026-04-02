@@ -123,6 +123,21 @@ ul li {
   border-radius: 1rem;
   padding: 1.05rem;
   box-shadow: 0 10px 22px rgba(22, 49, 60, 0.08);
+  transition: transform 160ms ease, box-shadow 160ms ease;
+}
+
+.project-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 14px 26px rgba(22, 49, 60, 0.14);
+}
+
+.project-banner {
+  width: 100%;
+  height: 140px;
+  object-fit: cover;
+  border-radius: 0.75rem;
+  margin-bottom: 0.75rem;
+  border: 1px solid rgba(22, 49, 60, 0.14);
 }
 
 .project-card h3 {
@@ -171,5 +186,9 @@ ul li {
 
   .project-card {
     padding: 0.9rem;
+  }
+
+  .project-banner {
+    height: 122px;
   }
 }

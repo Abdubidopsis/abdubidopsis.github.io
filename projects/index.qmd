@@ -9,6 +9,8 @@ A curated set of research and data projects.
 ::: {.project-grid}
 
 ::: {.project-card}
+![](images/gwas-banner.svg){.project-banner fig-alt="Genome-wide association project banner"}
+
 ### Genome-Wide Association in Quinoa
 
 Association mapping workflow using filtered variants, covariates, and model diagnostics.
@@ -21,6 +23,8 @@ Association mapping workflow using filtered variants, covariates, and model diag
 :::
 
 ::: {.project-card}
+![](images/audpc-banner.svg){.project-banner fig-alt="AUDPC project banner"}
+
 ### Disease Phenotyping and AUDPC Analysis
 
 Phenotype harmonization, replicate handling, BLUP estimation, and disease summary plots.
@@ -33,6 +37,8 @@ Phenotype harmonization, replicate handling, BLUP estimation, and disease summar
 :::
 
 ::: {.project-card}
+![](images/pca-banner.svg){.project-banner fig-alt="Population structure PCA project banner"}
+
 ### Population Structure and PCA Workflow
 
 Variant quality control and principal component analysis for population structure inference.

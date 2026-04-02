@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 300" role="img" aria-label="AUDPC project banner">
+  <defs>
+    <linearGradient id="bg2" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#3b334e"/>
+      <stop offset="100%" stop-color="#786f99"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="300" fill="url(#bg2)"/>
+  <g fill="#f4efff" opacity="0.8">
+    <rect x="70" y="165" width="70" height="85" rx="8"/>
+    <rect x="170" y="145" width="70" height="105" rx="8"/>
+    <rect x="270" y="110" width="70" height="140" rx="8"/>
+    <rect x="370" y="130" width="70" height="120" rx="8"/>
+    <rect x="470" y="90" width="70" height="160" rx="8"/>
+  </g>
+  <path d="M70 95C130 70 220 120 290 90C350 65 430 85 510 60" fill="none" stroke="#e2d8ff" stroke-width="5"/>
+  <text x="40" y="62" fill="#fbf7ff" font-size="36" font-family="Georgia, serif">Disease Phenotyping and AUDPC</text>
+</svg>
