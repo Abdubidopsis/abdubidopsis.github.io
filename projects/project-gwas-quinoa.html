@@ -349,6 +349,58 @@ ul.task-list li input[type="checkbox"] {
 </section>
 
 </main> <!-- /main -->
+<button class="theme-toggle" type="button" aria-label="Toggle dark mode" aria-pressed="false" title="Toggle dark mode">
+  <span class="theme-toggle-icon theme-toggle-moon" aria-hidden="true">
+    <svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" focusable="false">
+      <path d="M21 12.8A9 9 0 1 1 11.2 3 7 7 0 0 0 21 12.8Z"></path>
+    </svg>
+  </span>
+  <span class="theme-toggle-icon theme-toggle-sun" aria-hidden="true">
+    <svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" focusable="false">
+      <path d="M12 17a5 5 0 1 0-5-5 5 5 0 0 0 5 5Zm0-12a1 1 0 0 1 1 1v1.1a1 1 0 1 1-2 0V6a1 1 0 0 1 1-1Zm0 14.9a1 1 0 0 1 1 1V22a1 1 0 1 1-2 0v-.1a1 1 0 0 1 1-1ZM4.1 11a1 1 0 1 1 0 2H3a1 1 0 1 1 0-2Zm18 0a1 1 0 1 1 0 2H21a1 1 0 1 1 0-2ZM5.8 5.8a1 1 0 1 1 1.4 1.4l-.8.8a1 1 0 1 1-1.4-1.4Zm11.8 11.8a1 1 0 1 1 1.4 1.4l-.8.8a1 1 0 1 1-1.4-1.4ZM18.2 5.8a1 1 0 0 1 1.4 0 1 1 0 0 1 0 1.4l-.8.8a1 1 0 1 1-1.4-1.4Zm-11.8 11.8a1 1 0 0 1 1.4 0 1 1 0 0 1 0 1.4l-.8.8a1 1 0 0 1-1.4-1.4Z"></path>
+    </svg>
+  </span>
+</button>
+<script>
+(() => {
+  const storageKey = 'abdubidopsis-theme';
+  const root = document.documentElement;
+  const toggle = document.querySelector('.theme-toggle');
+
+  const getPreferredTheme = () => {
+    const saved = localStorage.getItem(storageKey);
+    if (saved === 'light' || saved === 'dark') return saved;
+    return window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+  };
+
+  const applyTheme = (theme) => {
+    root.setAttribute('data-bs-theme', theme);
+    root.setAttribute('data-theme-mode', theme);
+    document.body.setAttribute('data-bs-theme', theme);
+    document.body.setAttribute('data-theme-mode', theme);
+    root.classList.toggle('theme-dark', theme === 'dark');
+    root.classList.toggle('theme-light', theme === 'light');
+    document.body.classList.toggle('theme-dark', theme === 'dark');
+    document.body.classList.toggle('theme-light', theme === 'light');
+    root.style.colorScheme = theme;
+    document.body.style.colorScheme = theme;
+    if (toggle) {
+      toggle.setAttribute('aria-pressed', theme === 'dark' ? 'true' : 'false');
+    }
+  };
+
+  applyTheme(getPreferredTheme());
+
+  if (toggle) {
+    toggle.addEventListener('click', () => {
+      const current = root.getAttribute('data-bs-theme') === 'dark' ? 'dark' : 'light';
+      const next = current === 'dark' ? 'light' : 'dark';
+      localStorage.setItem(storageKey, next);
+      applyTheme(next);
+    });
+  }
+})();
+</script>
 <script id="quarto-html-after-body" type="application/javascript">
   window.document.addEventListener("DOMContentLoaded", function (event) {
     // Ensure there is a toggle, if there isn't float one in the top right
