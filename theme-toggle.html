@@ -12,40 +12,24 @@
 </button>
 <script>
 (() => {
-  const storageKey = 'abdubidopsis-theme';
-  const root = document.documentElement;
   const toggle = document.querySelector('.theme-toggle');
 
-  const getPreferredTheme = () => {
-    const saved = localStorage.getItem(storageKey);
-    if (saved === 'light' || saved === 'dark') return saved;
-    return window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+  const syncPressedState = () => {
+    if (!toggle) return;
+    const isDark = document.body.classList.contains('quarto-dark');
+    toggle.setAttribute('aria-pressed', isDark ? 'true' : 'false');
   };
 
-  const applyTheme = (theme) => {
-    root.setAttribute('data-bs-theme', theme);
-    root.setAttribute('data-theme-mode', theme);
-    document.body.setAttribute('data-bs-theme', theme);
-    document.body.setAttribute('data-theme-mode', theme);
-    root.classList.toggle('theme-dark', theme === 'dark');
-    root.classList.toggle('theme-light', theme === 'light');
-    document.body.classList.toggle('theme-dark', theme === 'dark');
-    document.body.classList.toggle('theme-light', theme === 'light');
-    root.style.colorScheme = theme;
-    document.body.style.colorScheme = theme;
-    if (toggle) {
-      toggle.setAttribute('aria-pressed', theme === 'dark' ? 'true' : 'false');
-    }
-  };
-
-  applyTheme(getPreferredTheme());
+  syncPressedState();
 
   if (toggle) {
     toggle.addEventListener('click', () => {
-      const current = root.getAttribute('data-bs-theme') === 'dark' ? 'dark' : 'light';
-      const next = current === 'dark' ? 'light' : 'dark';
-      localStorage.setItem(storageKey, next);
-      applyTheme(next);
+      if (typeof window.quartoToggleColorScheme === 'function') {
+        window.quartoToggleColorScheme();
+      }
+
+      requestAnimationFrame(syncPressedState);
+      setTimeout(syncPressedState, 40);
     });
   }
 })();
