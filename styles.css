@@ -118,6 +118,7 @@ ul li {
 }
 
 .project-card {
+  position: relative;
   background: rgba(255, 255, 255, 0.84);
   border: 1px solid rgba(22, 49, 60, 0.12);
   border-radius: 1rem;
@@ -163,6 +164,13 @@ ul li {
   text-decoration: none;
   font-weight: 600;
   color: #16313c;
+}
+
+.project-link::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: 1rem;
 }
 
 .project-link:hover {
