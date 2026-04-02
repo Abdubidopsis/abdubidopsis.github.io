@@ -184,17 +184,19 @@ ul li {
 .project-tag-link {
   display: inline-flex;
   align-items: center;
-  padding: 0.22rem 0.6rem;
+  justify-content: center;
+  padding: 0.3rem 0.72rem;
   border-radius: 999px;
   background: rgba(63, 124, 133, 0.14);
   border: 1px solid rgba(63, 124, 133, 0.25);
   color: #16313c;
-  font-size: 0.82rem;
+  font-size: 0.83rem;
   font-weight: 600;
   text-decoration: none;
   position: relative;
   z-index: 2;
-  transition: background 140ms ease, transform 140ms ease, border-color 140ms ease;
+  line-height: 1;
+  transition: background 140ms ease, transform 140ms ease, border-color 140ms ease, box-shadow 140ms ease;
 }
 
 .project-tag-link:hover {
@@ -204,21 +206,12 @@ ul li {
   text-decoration: underline;
 }
 
-.project-link {
-  display: block;
-  position: absolute;
-  inset: 0;
-  border-radius: 1rem;
-  z-index: 1;
-  text-decoration: none;
-  color: inherit;
+.project-card[role="link"] {
+  cursor: pointer;
 }
 
-.project-link::after {
-  content: "";
-  position: absolute;
-  inset: 0;
-  border-radius: 1rem;
+.project-card[role="link"]:hover .project-tag-link {
+  box-shadow: 0 4px 10px rgba(63, 124, 133, 0.12);
 }
 
 @media (max-width: 768px) {
