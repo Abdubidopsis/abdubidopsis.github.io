@@ -282,6 +282,7 @@ a.project-tag-link:focus {
 html[data-bs-theme="dark"],
 body[data-bs-theme="dark"],
 html.theme-dark {
+  color-scheme: dark;
   background:
     radial-gradient(circle at 14% 0%, rgba(96, 165, 250, 0.14), transparent 26%),
     radial-gradient(circle at 100% 18%, rgba(96, 165, 250, 0.09), transparent 32%),
@@ -298,6 +299,20 @@ body[data-bs-theme="dark"] {
   color: #dbe7f5;
 }
 
+body[data-bs-theme="dark"] .quarto-page,
+body[data-bs-theme="dark"] .page-columns,
+body[data-bs-theme="dark"] .quarto-container,
+body[data-bs-theme="dark"] .quarto-content,
+body[data-bs-theme="dark"] .content,
+body[data-bs-theme="dark"] main.content,
+body[data-bs-theme="dark"] article,
+body[data-bs-theme="dark"] .quarto-title-block,
+body[data-bs-theme="dark"] .quarto-title-banner,
+body[data-bs-theme="dark"] .page-layout-article {
+  background: transparent !important;
+  color: #dbe7f5 !important;
+}
+
 html[data-bs-theme="dark"] .navbar,
 body[data-bs-theme="dark"] .navbar {
   border-bottom: 1px solid rgba(255, 255, 255, 0.08);
@@ -309,6 +324,21 @@ body[data-bs-theme="dark"] .sidebar,
 html.theme-dark .sidebar {
   background: rgba(15, 23, 42, 0.92);
   color: #dbe7f5;
+}
+
+body[data-bs-theme="dark"] .quarto-sidebar,
+body[data-bs-theme="dark"] .sidebar-navigation,
+body[data-bs-theme="dark"] .sidebar-menu,
+body[data-bs-theme="dark"] .sidebar-body {
+  background: rgba(15, 23, 42, 0.92) !important;
+  color: #dbe7f5 !important;
+}
+
+body[data-bs-theme="dark"] .page-columns,
+body[data-bs-theme="dark"] .page-columns .content,
+body[data-bs-theme="dark"] .page-columns .column-body,
+body[data-bs-theme="dark"] .page-columns .quarto-layout-panel {
+  background: transparent !important;
 }
 
 html[data-bs-theme="dark"] .sidebar a,
