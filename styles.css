@@ -110,6 +110,50 @@ ul li {
   margin-bottom: 0.35rem;
 }
 
+.project-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 1rem;
+  margin-top: 0.8rem;
+}
+
+.project-card {
+  background: rgba(255, 255, 255, 0.84);
+  border: 1px solid rgba(22, 49, 60, 0.12);
+  border-radius: 1rem;
+  padding: 1.05rem;
+  box-shadow: 0 10px 22px rgba(22, 49, 60, 0.08);
+}
+
+.project-card h3 {
+  margin-top: 0;
+  margin-bottom: 0.5rem;
+}
+
+.project-tag {
+  display: inline-block;
+  margin-right: 0.35rem;
+  margin-bottom: 0.5rem;
+  padding: 0.15rem 0.55rem;
+  border-radius: 999px;
+  background: rgba(63, 124, 133, 0.14);
+  border: 1px solid rgba(63, 124, 133, 0.25);
+  color: #16313c;
+  font-size: 0.82rem;
+}
+
+.project-link {
+  display: inline-block;
+  margin-top: 0.5rem;
+  text-decoration: none;
+  font-weight: 600;
+  color: #16313c;
+}
+
+.project-link:hover {
+  text-decoration: underline;
+}
+
 @media (max-width: 768px) {
   .profile-hero {
     padding: 1.2rem;
@@ -123,5 +167,9 @@ ul li {
   .social-icon-img {
     width: 1.9rem;
     height: 1.9rem;
+  }
+
+  .project-card {
+    padding: 0.9rem;
   }
 }

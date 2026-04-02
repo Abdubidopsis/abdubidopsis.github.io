@@ -138,20 +138,35 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<p>A curated list of research and data projects.</p>
+<p>A curated set of research and data projects.</p>
 <section id="featured-projects" class="level2">
 <h2 class="anchored" data-anchor-id="featured-projects">Featured Projects</h2>
-<ul>
-<li><a href="../projects/project-gwas-quinoa.html">Genome-Wide Association in Quinoa</a></li>
-<li><a href="../projects/project-audpc-pipeline.html">Disease Phenotyping and AUDPC Analysis</a></li>
-<li><a href="../projects/project-popgen-pca.html">Population Structure and PCA Workflow</a></li>
-</ul>
+<div class="project-grid">
+<section id="genome-wide-association-in-quinoa" class="level3 project-card">
+<h3 class="anchored" data-anchor-id="genome-wide-association-in-quinoa">Genome-Wide Association in Quinoa</h3>
+<p>Association mapping workflow using filtered variants, covariates, and model diagnostics.</p>
+<p><span class="project-tag">GWAS</span> <span class="project-tag">Quinoa</span> <span class="project-tag">Genomics</span></p>
+<p><a href="../projects/project-gwas-quinoa.html" class="project-link">Open Project</a></p>
+</section>
+<section id="disease-phenotyping-and-audpc-analysis" class="level3 project-card">
+<h3 class="anchored" data-anchor-id="disease-phenotyping-and-audpc-analysis">Disease Phenotyping and AUDPC Analysis</h3>
+<p>Phenotype harmonization, replicate handling, BLUP estimation, and disease summary plots.</p>
+<p><span class="project-tag">AUDPC</span> <span class="project-tag">BLUP</span> <span class="project-tag">Phenotypes</span></p>
+<p><a href="../projects/project-audpc-pipeline.html" class="project-link">Open Project</a></p>
+</section>
+<section id="population-structure-and-pca-workflow" class="level3 project-card">
+<h3 class="anchored" data-anchor-id="population-structure-and-pca-workflow">Population Structure and PCA Workflow</h3>
+<p>Variant quality control and principal component analysis for population structure inference.</p>
+<p><span class="project-tag">PCA</span> <span class="project-tag">Population Genomics</span> <span class="project-tag">QC</span></p>
+<p><a href="../projects/project-popgen-pca.html" class="project-link">Open Project</a></p>
+</section>
+</div>
 </section>
 <section id="add-a-new-project" class="level2">
 <h2 class="anchored" data-anchor-id="add-a-new-project">Add a New Project</h2>
 <ol type="1">
 <li>Create a new <code>.qmd</code> file in <code>projects/</code>.</li>
-<li>Add the project link in this page.</li>
+<li>Copy one project card block and update title, description, tags, and link.</li>
 <li>Commit and push to <code>main</code>.</li>
 </ol>
 

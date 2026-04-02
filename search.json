@@ -116,21 +116,21 @@
     "href": "projects/index.html",
     "title": "Projects",
     "section": "",
-    "text": "A curated list of research and data projects."
+    "text": "A curated set of research and data projects."
   },
   {
     "objectID": "projects/index.html#featured-projects",
     "href": "projects/index.html#featured-projects",
     "title": "Projects",
     "section": "Featured Projects",
-    "text": "Featured Projects\n\nGenome-Wide Association in Quinoa\nDisease Phenotyping and AUDPC Analysis\nPopulation Structure and PCA Workflow"
+    "text": "Featured Projects\n\n\nGenome-Wide Association in Quinoa\nAssociation mapping workflow using filtered variants, covariates, and model diagnostics.\nGWAS Quinoa Genomics\nOpen Project\n\n\nDisease Phenotyping and AUDPC Analysis\nPhenotype harmonization, replicate handling, BLUP estimation, and disease summary plots.\nAUDPC BLUP Phenotypes\nOpen Project\n\n\nPopulation Structure and PCA Workflow\nVariant quality control and principal component analysis for population structure inference.\nPCA Population Genomics QC\nOpen Project"
   },
   {
     "objectID": "projects/index.html#add-a-new-project",
     "href": "projects/index.html#add-a-new-project",
     "title": "Projects",
     "section": "Add a New Project",
-    "text": "Add a New Project\n\nCreate a new .qmd file in projects/.\nAdd the project link in this page.\nCommit and push to main."
+    "text": "Add a New Project\n\nCreate a new .qmd file in projects/.\nCopy one project card block and update title, description, tags, and link.\nCommit and push to main."
   },
   {
     "objectID": "projects/project-popgen-pca.html",
