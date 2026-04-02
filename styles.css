@@ -17,6 +17,11 @@ body {
   line-height: 1.72;
 }
 
+html,
+body {
+  min-height: 100%;
+}
+
 .navbar {
   border-bottom: 1px solid rgba(20, 50, 79, 0.08);
   backdrop-filter: blur(8px);
@@ -155,6 +160,20 @@ h3 {
 
 main.content {
   max-width: 980px;
+}
+
+#quarto-content,
+#quarto-document-content,
+.quarto-page,
+.quarto-container,
+.quarto-content,
+.page-columns,
+.page-layout-article,
+main,
+article,
+.content {
+  background-color: transparent;
+  color: inherit;
 }
 
 ul li {
@@ -330,6 +349,8 @@ body.theme-dark a:hover {
 
 html[data-bs-theme="dark"] .quarto-page,
 html[data-bs-theme="dark"] .page-columns,
+html[data-bs-theme="dark"] #quarto-content,
+html[data-bs-theme="dark"] #quarto-document-content,
 html[data-bs-theme="dark"] .quarto-container,
 html[data-bs-theme="dark"] .quarto-content,
 html[data-bs-theme="dark"] .content,
@@ -340,6 +361,8 @@ html[data-bs-theme="dark"] .quarto-title-banner,
 html[data-bs-theme="dark"] .page-layout-article,
 body[data-bs-theme="dark"] .quarto-page,
 body[data-bs-theme="dark"] .page-columns,
+body[data-bs-theme="dark"] #quarto-content,
+body[data-bs-theme="dark"] #quarto-document-content,
 body[data-bs-theme="dark"] .quarto-container,
 body[data-bs-theme="dark"] .quarto-content,
 body[data-bs-theme="dark"] .content,
@@ -350,6 +373,8 @@ body[data-bs-theme="dark"] .quarto-title-banner,
 body[data-bs-theme="dark"] .page-layout-article,
 body.theme-dark .quarto-page,
 body.theme-dark .page-columns,
+body.theme-dark #quarto-content,
+body.theme-dark #quarto-document-content,
 body.theme-dark .quarto-container,
 body.theme-dark .quarto-content,
 body.theme-dark .content,
@@ -365,6 +390,12 @@ body.theme-dark .page-layout-article {
 html[data-bs-theme="dark"] .content,
 body[data-bs-theme="dark"] .content,
 body.theme-dark .content,
+html[data-bs-theme="dark"] #quarto-content,
+body[data-bs-theme="dark"] #quarto-content,
+body.theme-dark #quarto-content,
+html[data-bs-theme="dark"] #quarto-document-content,
+body[data-bs-theme="dark"] #quarto-document-content,
+body.theme-dark #quarto-document-content,
 html[data-bs-theme="dark"] .quarto-content,
 body[data-bs-theme="dark"] .quarto-content,
 body.theme-dark .quarto-content,
