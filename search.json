@@ -28,18 +28,11 @@
     "text": "A Personal Note\nThe mystery of human existence lies not in just staying alive, but in finding something to live for.\nF. Dostoevsky"
   },
   {
-    "objectID": "projects/project-gwas-quinoa.html",
-    "href": "projects/project-gwas-quinoa.html",
-    "title": "Genome-Wide Association in Quinoa",
-    "section": "",
-    "text": "Short summary of the project objective and biological question."
-  },
-  {
     "objectID": "projects/project-gwas-quinoa.html#overview",
     "href": "projects/project-gwas-quinoa.html#overview",
     "title": "Genome-Wide Association in Quinoa",
-    "section": "",
-    "text": "Short summary of the project objective and biological question."
+    "section": "Overview",
+    "text": "Overview\nShort summary of the project objective and biological question."
   },
   {
     "objectID": "projects/project-gwas-quinoa.html#your-role",
@@ -70,18 +63,11 @@
     "text": "Links\n\nRepository: Add repo link\nReport or manuscript: Add document link"
   },
   {
-    "objectID": "projects/project-audpc-pipeline.html",
-    "href": "projects/project-audpc-pipeline.html",
-    "title": "Disease Phenotyping and AUDPC Analysis",
-    "section": "",
-    "text": "Summarize the disease scoring workflow and experimental context."
-  },
-  {
     "objectID": "projects/project-audpc-pipeline.html#overview",
     "href": "projects/project-audpc-pipeline.html#overview",
     "title": "Disease Phenotyping and AUDPC Analysis",
-    "section": "",
-    "text": "Summarize the disease scoring workflow and experimental context."
+    "section": "Overview",
+    "text": "Overview\nSummarize the disease scoring workflow and experimental context."
   },
   {
     "objectID": "projects/project-audpc-pipeline.html#data",
@@ -133,18 +119,11 @@
     "text": "Add a New Project\n\nCreate a new .qmd file in projects/.\nCopy one project card block and update title, description, tags, and link.\nCommit and push to main."
   },
   {
-    "objectID": "projects/project-popgen-pca.html",
-    "href": "projects/project-popgen-pca.html",
-    "title": "Population Structure and PCA Workflow",
-    "section": "",
-    "text": "Describe the objective of population structure analysis."
-  },
-  {
     "objectID": "projects/project-popgen-pca.html#overview",
     "href": "projects/project-popgen-pca.html#overview",
     "title": "Population Structure and PCA Workflow",
-    "section": "",
-    "text": "Describe the objective of population structure analysis."
+    "section": "Overview",
+    "text": "Overview\nDescribe the objective of population structure analysis."
   },
   {
     "objectID": "projects/project-popgen-pca.html#methods",
