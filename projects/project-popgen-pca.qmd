@@ -1,6 +1,11 @@
 ---
 title: "Population Structure and PCA Workflow"
+title-block-style: none
 ---
+
+<img class="project-page-banner" src="images/pca-banner.svg" alt="Population structure PCA project banner" />
+
+# Population Structure and PCA Workflow
 
 ## Overview
 

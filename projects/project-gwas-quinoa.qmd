@@ -1,6 +1,11 @@
 ---
 title: "Genome-Wide Association in Quinoa"
+title-block-style: none
 ---
+
+<img class="project-page-banner" src="images/gwas-banner.svg" alt="Genome-wide association project banner" />
+
+# Genome-Wide Association in Quinoa
 
 ## Overview
 

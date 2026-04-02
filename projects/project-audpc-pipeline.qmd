@@ -1,6 +1,11 @@
 ---
 title: "Disease Phenotyping and AUDPC Analysis"
+title-block-style: none
 ---
+
+<img class="project-page-banner" src="images/audpc-banner.svg" alt="AUDPC project banner" />
+
+# Disease Phenotyping and AUDPC Analysis
 
 ## Overview
 

@@ -110,6 +110,17 @@ ul li {
   margin-bottom: 0.35rem;
 }
 
+.project-page-banner {
+  display: block;
+  width: 100%;
+  max-height: 280px;
+  object-fit: cover;
+  border-radius: 1rem;
+  margin: 0.25rem 0 1rem 0;
+  border: 1px solid rgba(22, 49, 60, 0.14);
+  box-shadow: 0 12px 26px rgba(22, 49, 60, 0.1);
+}
+
 .project-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
