@@ -123,7 +123,7 @@
     "href": "projects/index.html#featured-projects",
     "title": "Projects",
     "section": "Featured Projects",
-    "text": "Featured Projects\n\n\n  \n\nGenome-Wide Association in Quinoa\n\nAssociation mapping workflow using filtered variants, covariates, and model diagnostics.\n\n\nGWAS Quinoa Genomics\n\n\n\n\n\n  \n\nDisease Phenotyping and AUDPC Analysis\n\nPhenotype harmonization, replicate handling, BLUP estimation, and disease summary plots.\n\n\nAUDPC BLUP Phenotypes\n\n\n\n\n\n  \n\nPopulation Structure and PCA Workflow\n\nVariant quality control and principal component analysis for population structure inference.\n\n\nPCA Population Genomics QC"
+    "text": "Featured Projects\n\n\n  \n\nGenome-Wide Association in Quinoa\n\nAssociation mapping workflow using filtered variants, covariates, and model diagnostics.\n\n\nGWAS Quinoa Genomics\n\n\n\n\n  \n\nDisease Phenotyping and AUDPC Analysis\n\nPhenotype harmonization, replicate handling, BLUP estimation, and disease summary plots.\n\n\nAUDPC BLUP Phenotypes\n\n\n\n\n  \n\nPopulation Structure and PCA Workflow\n\nVariant quality control and principal component analysis for population structure inference.\n\n\nPCA Population Genomics QC"
   },
   {
     "objectID": "projects/index.html#add-a-new-project",
