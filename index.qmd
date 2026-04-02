@@ -19,6 +19,21 @@ Cologne, Germany
 
 Email: [abdubidopsis@users.noreply.github.com](mailto:abdubidopsis@users.noreply.github.com)  
 GitHub: [Abdubidopsis](https://github.com/Abdubidopsis)
+
+<div class="social-links" aria-label="Social links">
+	<a class="social-link" href="https://de.linkedin.com/in/abdul363" target="_blank" rel="noopener noreferrer">
+		<span class="social-icon">in</span>
+		<span>LinkedIn</span>
+	</a>
+	<a class="social-link" href="https://x.com/Abdubidopsis" target="_blank" rel="noopener noreferrer">
+		<span class="social-icon">X</span>
+		<span>X</span>
+	</a>
+	<a class="social-link" href="https://scholar.google.com/citations?user=nI0X9CQAAAAJ&hl=en" target="_blank" rel="noopener noreferrer">
+		<span class="social-icon">GS</span>
+		<span>Google Scholar</span>
+	</a>
+</div>
 :::
 :::
 :::
