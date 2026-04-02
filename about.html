@@ -339,7 +339,7 @@ ul.task-list li input[type="checkbox"] {
 </section>
 
 </main> <!-- /main -->
-<button class="theme-toggle" type="button" aria-label="Toggle dark mode" aria-pressed="false" title="Toggle dark mode">
+<button class="theme-toggle" type="button" aria-label="Toggle dark mode" aria-pressed="false" title="Toggle dark mode" style="position:fixed;top:.7rem;right:.7rem;left:auto;bottom:auto;width:2.05rem;height:2.05rem;z-index:1400;">
   <span class="theme-toggle-icon theme-toggle-moon" aria-hidden="true">
     <svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" focusable="false">
       <path d="M21 12.8A9 9 0 1 1 11.2 3 7 7 0 0 0 21 12.8Z"></path>
@@ -355,6 +355,14 @@ ul.task-list li input[type="checkbox"] {
 (() => {
   const toggle = document.querySelector('.theme-toggle');
 
+  const hideQuartoToggles = () => {
+    document.querySelectorAll('.quarto-color-scheme-toggle').forEach((el) => {
+      el.style.setProperty('display', 'none', 'important');
+      el.style.setProperty('visibility', 'hidden', 'important');
+      el.style.setProperty('pointer-events', 'none', 'important');
+    });
+  };
+
   const syncPressedState = () => {
     if (!toggle) return;
     const isDark = document.body.classList.contains('quarto-dark');
@@ -362,6 +370,8 @@ ul.task-list li input[type="checkbox"] {
   };
 
   syncPressedState();
+  window.addEventListener('DOMContentLoaded', hideQuartoToggles);
+  setTimeout(hideQuartoToggles, 60);
 
   if (toggle) {
     toggle.addEventListener('click', () => {
@@ -371,6 +381,7 @@ ul.task-list li input[type="checkbox"] {
 
       requestAnimationFrame(syncPressedState);
       setTimeout(syncPressedState, 40);
+      setTimeout(hideQuartoToggles, 40);
     });
   }
 })();
