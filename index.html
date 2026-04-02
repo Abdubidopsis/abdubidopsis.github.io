@@ -396,6 +396,10 @@ GitHub: <a href="https://github.com/Abdubidopsis">Abdubidopsis</a></p>
   const applyTheme = (theme) => {
     root.setAttribute('data-bs-theme', theme);
     root.setAttribute('data-theme-mode', theme);
+    document.body.setAttribute('data-bs-theme', theme);
+    document.body.setAttribute('data-theme-mode', theme);
+    root.classList.toggle('theme-dark', theme === 'dark');
+    root.classList.toggle('theme-light', theme === 'light');
     if (toggle) {
       toggle.setAttribute('aria-pressed', theme === 'dark' ? 'true' : 'false');
     }
