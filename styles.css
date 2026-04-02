@@ -68,6 +68,11 @@ body {
   display: none;
 }
 
+/* Hide Quarto's auto-generated dark mode control to avoid duplicate toggles. */
+a.quarto-color-scheme-toggle {
+  display: none !important;
+}
+
 html[data-bs-theme="dark"] .theme-toggle-moon {
   display: none;
 }
