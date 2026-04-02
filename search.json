@@ -1,142 +1,62 @@
 [
   {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "Abdubidopsis",
+    "objectID": "publications/index.html",
+    "href": "publications/index.html",
+    "title": "Publications",
     "section": "",
-    "text": "Evolutionary and Computational Biologist | Plant Genomics | Data-Driven Biology\nInstitute for Plant Sciences, University of Cologne\nCologne, Germany\nEmail: abdubidopsis@users.noreply.github.com\nGitHub: Abdubidopsis",
+    "text": "This page can hold your selected papers, preprints, thesis chapters, posters, and conference contributions.",
     "crumbs": [
-      "Home"
+      "Publications"
     ]
   },
   {
-    "objectID": "index.html#my-journey-in-science",
-    "href": "index.html#my-journey-in-science",
-    "title": "Abdubidopsis",
-    "section": "My Journey in Science",
-    "text": "My Journey in Science\nI am interested in how genomes record adaptation across time and space. My work combines evolutionary biology, quantitative genetics, and reproducible data workflows to study biological complexity under changing environments.\nI enjoy building practical pipelines that turn raw sequencing and phenotypic datasets into interpretable biological insights. This includes statistical modeling, machine learning, and careful data curation, especially in crop and ecological genomics.\nTeaching and mentoring are central to how I work. I value clear explanation, open workflows, and helping students connect computation with biological questions.",
-    "crumbs": [
-      "Home"
-    ]
-  },
-  {
-    "objectID": "index.html#additional-links",
-    "href": "index.html#additional-links",
-    "title": "Abdubidopsis",
-    "section": "Additional Links",
-    "text": "Additional Links\n\nGitHub Projects\nAbout This Website",
-    "crumbs": [
-      "Home"
-    ]
-  },
-  {
-    "objectID": "index.html#a-personal-note",
-    "href": "index.html#a-personal-note",
-    "title": "Abdubidopsis",
-    "section": "A Personal Note",
-    "text": "A Personal Note\nThe mystery of human existence lies not in just staying alive, but in finding something to live for.\nF. Dostoevsky",
-    "crumbs": [
-      "Home"
-    ]
-  },
-  {
-    "objectID": "projects/project-gwas-quinoa.html#overview",
-    "href": "projects/project-gwas-quinoa.html#overview",
-    "title": "Genome-Wide Association in Quinoa",
-    "section": "Overview",
-    "text": "Overview\nShort summary of the project objective and biological question."
-  },
-  {
-    "objectID": "projects/project-gwas-quinoa.html#your-role",
-    "href": "projects/project-gwas-quinoa.html#your-role",
-    "title": "Genome-Wide Association in Quinoa",
-    "section": "Your Role",
-    "text": "Your Role\nDescribe your contributions (analysis, data curation, writing, supervision)."
-  },
-  {
-    "objectID": "projects/project-gwas-quinoa.html#methods",
-    "href": "projects/project-gwas-quinoa.html#methods",
-    "title": "Genome-Wide Association in Quinoa",
-    "section": "Methods",
-    "text": "Methods\n\nGenotyping and variant filtering\nGWAS model setup\nCovariate correction and interpretation"
-  },
-  {
-    "objectID": "projects/project-gwas-quinoa.html#results",
-    "href": "projects/project-gwas-quinoa.html#results",
-    "title": "Genome-Wide Association in Quinoa",
-    "section": "Results",
-    "text": "Results\nAdd key figures, tables, and bullet-point findings."
-  },
-  {
-    "objectID": "projects/project-gwas-quinoa.html#links",
-    "href": "projects/project-gwas-quinoa.html#links",
-    "title": "Genome-Wide Association in Quinoa",
-    "section": "Links",
-    "text": "Links\n\nRepository: Add repo link\nReport or manuscript: Add document link"
-  },
-  {
-    "objectID": "projects/project-audpc-pipeline.html#overview",
-    "href": "projects/project-audpc-pipeline.html#overview",
-    "title": "Disease Phenotyping and AUDPC Analysis",
-    "section": "Overview",
-    "text": "Overview\nSummarize the disease scoring workflow and experimental context."
-  },
-  {
-    "objectID": "projects/project-audpc-pipeline.html#data",
-    "href": "projects/project-audpc-pipeline.html#data",
-    "title": "Disease Phenotyping and AUDPC Analysis",
-    "section": "Data",
-    "text": "Data\nList dataset source, format, and sampling details."
-  },
-  {
-    "objectID": "projects/project-audpc-pipeline.html#methods",
-    "href": "projects/project-audpc-pipeline.html#methods",
-    "title": "Disease Phenotyping and AUDPC Analysis",
-    "section": "Methods",
-    "text": "Methods\n\nReplicate-level AUDPC calculations\nBLUP estimation by accession\nQuality checks and visualization"
-  },
-  {
-    "objectID": "projects/project-audpc-pipeline.html#results",
-    "href": "projects/project-audpc-pipeline.html#results",
-    "title": "Disease Phenotyping and AUDPC Analysis",
-    "section": "Results",
-    "text": "Results\nDocument major outputs and interpretation."
-  },
-  {
-    "objectID": "projects/project-audpc-pipeline.html#links",
-    "href": "projects/project-audpc-pipeline.html#links",
-    "title": "Disease Phenotyping and AUDPC Analysis",
-    "section": "Links",
-    "text": "Links\n\nRepository: Add repo link\nSlides or notes: Add document link"
-  },
-  {
-    "objectID": "projects/index.html",
-    "href": "projects/index.html",
-    "title": "Projects",
+    "objectID": "publications/index.html#overview",
+    "href": "publications/index.html#overview",
+    "title": "Publications",
     "section": "",
-    "text": "A curated set of research and data projects.",
+    "text": "This page can hold your selected papers, preprints, thesis chapters, posters, and conference contributions.",
     "crumbs": [
-      "Projects"
+      "Publications"
     ]
   },
   {
-    "objectID": "projects/index.html#featured-projects",
-    "href": "projects/index.html#featured-projects",
-    "title": "Projects",
-    "section": "Featured Projects",
-    "text": "Featured Projects\n\n\n  \n\nGenome-Wide Association in Quinoa\n\nAssociation mapping workflow using filtered variants, covariates, and model diagnostics.\n\n\nGWAS Quinoa Genomics\n\n\n\n\n  \n\nDisease Phenotyping and AUDPC Analysis\n\nPhenotype harmonization, replicate handling, BLUP estimation, and disease summary plots.\n\n\nAUDPC BLUP Phenotypes\n\n\n\n\n  \n\nPopulation Structure and PCA Workflow\n\nVariant quality control and principal component analysis for population structure inference.\n\n\nPCA Population Genomics QC",
+    "objectID": "publications/index.html#selected-publications",
+    "href": "publications/index.html#selected-publications",
+    "title": "Publications",
+    "section": "Selected Publications",
+    "text": "Selected Publications\n\n\nJournal articles\n\nAdd a publication here. Include authors, year, title, journal, and DOI or URL.\nAdd another publication here. Keep the citation style consistent across entries.\n\n\n\nPreprints and manuscripts\n\nAdd a preprint or manuscript here. You can link to the repository, arXiv, or journal page.\n\n\n\nConference presentations and posters\n\nAdd a talk or poster here. Include the event name, location, and date.",
     "crumbs": [
-      "Projects"
+      "Publications"
     ]
   },
   {
-    "objectID": "projects/index.html#add-a-new-project",
-    "href": "projects/index.html#add-a-new-project",
-    "title": "Projects",
-    "section": "Add a New Project",
-    "text": "Add a New Project\n\nCreate a new .qmd file in projects/.\nCopy one project card block and update title, description, tags, and link.\nCommit and push to main.",
+    "objectID": "publications/index.html#recommended-format",
+    "href": "publications/index.html#recommended-format",
+    "title": "Publications",
+    "section": "Recommended format",
+    "text": "Recommended format\nUse a short citation, a one-sentence summary of the contribution, and a link to the final version when available.\nExample structure:\n\nAuthor, A., Author, B. (2026). Title of the paper. Journal Name. DOI\nAuthor, A. (2025). Title of the preprint. arXiv",
     "crumbs": [
-      "Projects"
+      "Publications"
+    ]
+  },
+  {
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "About",
+    "section": "",
+    "text": "This is a simple Quarto website for sharing project context and updates.\nUse this page to describe your project, goals, methods, or contact details.",
+    "crumbs": [
+      "About"
+    ]
+  },
+  {
+    "objectID": "about.html#suggested-structure",
+    "href": "about.html#suggested-structure",
+    "title": "About",
+    "section": "Suggested structure",
+    "text": "Suggested structure\n\nA short introduction to the project\nA list of pages or sections you plan to add\nLinks to GitHub, datasets, or reports",
+    "crumbs": [
+      "About"
     ]
   },
   {
@@ -175,23 +95,143 @@
     "text": "Links\n\nRepository: Add repo link\nNotebook or report: Add document link"
   },
   {
-    "objectID": "about.html",
-    "href": "about.html",
-    "title": "About",
+    "objectID": "projects/index.html",
+    "href": "projects/index.html",
+    "title": "Projects",
     "section": "",
-    "text": "This is a simple Quarto website for sharing project context and updates.\nUse this page to describe your project, goals, methods, or contact details.",
+    "text": "A curated set of research and data projects.",
     "crumbs": [
-      "About"
+      "Projects"
     ]
   },
   {
-    "objectID": "about.html#suggested-structure",
-    "href": "about.html#suggested-structure",
-    "title": "About",
-    "section": "Suggested structure",
-    "text": "Suggested structure\n\nA short introduction to the project\nA list of pages or sections you plan to add\nLinks to GitHub, datasets, or reports",
+    "objectID": "projects/index.html#featured-projects",
+    "href": "projects/index.html#featured-projects",
+    "title": "Projects",
+    "section": "Featured Projects",
+    "text": "Featured Projects\n\n\n  \n\nGenome-Wide Association in Quinoa\n\nAssociation mapping workflow using filtered variants, covariates, and model diagnostics.\n\n\nGWAS Quinoa Genomics\n\n\n\n\n  \n\nDisease Phenotyping and AUDPC Analysis\n\nPhenotype harmonization, replicate handling, BLUP estimation, and disease summary plots.\n\n\nAUDPC BLUP Phenotypes\n\n\n\n\n  \n\nPopulation Structure and PCA Workflow\n\nVariant quality control and principal component analysis for population structure inference.\n\n\nPCA Population Genomics QC",
     "crumbs": [
-      "About"
+      "Projects"
+    ]
+  },
+  {
+    "objectID": "projects/index.html#add-a-new-project",
+    "href": "projects/index.html#add-a-new-project",
+    "title": "Projects",
+    "section": "Add a New Project",
+    "text": "Add a New Project\n\nCreate a new .qmd file in projects/.\nCopy one project card block and update title, description, tags, and link.\nCommit and push to main.",
+    "crumbs": [
+      "Projects"
+    ]
+  },
+  {
+    "objectID": "projects/project-audpc-pipeline.html#overview",
+    "href": "projects/project-audpc-pipeline.html#overview",
+    "title": "Disease Phenotyping and AUDPC Analysis",
+    "section": "Overview",
+    "text": "Overview\nSummarize the disease scoring workflow and experimental context."
+  },
+  {
+    "objectID": "projects/project-audpc-pipeline.html#data",
+    "href": "projects/project-audpc-pipeline.html#data",
+    "title": "Disease Phenotyping and AUDPC Analysis",
+    "section": "Data",
+    "text": "Data\nList dataset source, format, and sampling details."
+  },
+  {
+    "objectID": "projects/project-audpc-pipeline.html#methods",
+    "href": "projects/project-audpc-pipeline.html#methods",
+    "title": "Disease Phenotyping and AUDPC Analysis",
+    "section": "Methods",
+    "text": "Methods\n\nReplicate-level AUDPC calculations\nBLUP estimation by accession\nQuality checks and visualization"
+  },
+  {
+    "objectID": "projects/project-audpc-pipeline.html#results",
+    "href": "projects/project-audpc-pipeline.html#results",
+    "title": "Disease Phenotyping and AUDPC Analysis",
+    "section": "Results",
+    "text": "Results\nDocument major outputs and interpretation."
+  },
+  {
+    "objectID": "projects/project-audpc-pipeline.html#links",
+    "href": "projects/project-audpc-pipeline.html#links",
+    "title": "Disease Phenotyping and AUDPC Analysis",
+    "section": "Links",
+    "text": "Links\n\nRepository: Add repo link\nSlides or notes: Add document link"
+  },
+  {
+    "objectID": "projects/project-gwas-quinoa.html#overview",
+    "href": "projects/project-gwas-quinoa.html#overview",
+    "title": "Genome-Wide Association in Quinoa",
+    "section": "Overview",
+    "text": "Overview\nShort summary of the project objective and biological question."
+  },
+  {
+    "objectID": "projects/project-gwas-quinoa.html#your-role",
+    "href": "projects/project-gwas-quinoa.html#your-role",
+    "title": "Genome-Wide Association in Quinoa",
+    "section": "Your Role",
+    "text": "Your Role\nDescribe your contributions (analysis, data curation, writing, supervision)."
+  },
+  {
+    "objectID": "projects/project-gwas-quinoa.html#methods",
+    "href": "projects/project-gwas-quinoa.html#methods",
+    "title": "Genome-Wide Association in Quinoa",
+    "section": "Methods",
+    "text": "Methods\n\nGenotyping and variant filtering\nGWAS model setup\nCovariate correction and interpretation"
+  },
+  {
+    "objectID": "projects/project-gwas-quinoa.html#results",
+    "href": "projects/project-gwas-quinoa.html#results",
+    "title": "Genome-Wide Association in Quinoa",
+    "section": "Results",
+    "text": "Results\nAdd key figures, tables, and bullet-point findings."
+  },
+  {
+    "objectID": "projects/project-gwas-quinoa.html#links",
+    "href": "projects/project-gwas-quinoa.html#links",
+    "title": "Genome-Wide Association in Quinoa",
+    "section": "Links",
+    "text": "Links\n\nRepository: Add repo link\nReport or manuscript: Add document link"
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Abdubidopsis",
+    "section": "",
+    "text": "Evolutionary and Computational Biologist | Plant Genomics | Data-Driven Biology\nInstitute for Plant Sciences, University of Cologne\nCologne, Germany\nEmail: abdubidopsis@users.noreply.github.com\nGitHub: Abdubidopsis",
+    "crumbs": [
+      "Home"
+    ]
+  },
+  {
+    "objectID": "index.html#my-journey-in-science",
+    "href": "index.html#my-journey-in-science",
+    "title": "Abdubidopsis",
+    "section": "My Journey in Science",
+    "text": "My Journey in Science\nI am interested in how genomes record adaptation across time and space. My work combines evolutionary biology, quantitative genetics, and reproducible data workflows to study biological complexity under changing environments.\nI enjoy building practical pipelines that turn raw sequencing and phenotypic datasets into interpretable biological insights. This includes statistical modeling, machine learning, and careful data curation, especially in crop and ecological genomics.\nTeaching and mentoring are central to how I work. I value clear explanation, open workflows, and helping students connect computation with biological questions.",
+    "crumbs": [
+      "Home"
+    ]
+  },
+  {
+    "objectID": "index.html#additional-links",
+    "href": "index.html#additional-links",
+    "title": "Abdubidopsis",
+    "section": "Additional Links",
+    "text": "Additional Links\n\nGitHub Projects\nAbout This Website",
+    "crumbs": [
+      "Home"
+    ]
+  },
+  {
+    "objectID": "index.html#a-personal-note",
+    "href": "index.html#a-personal-note",
+    "title": "Abdubidopsis",
+    "section": "A Personal Note",
+    "text": "A Personal Note\nThe mystery of human existence lies not in just staying alive, but in finding something to live for.\nF. Dostoevsky",
+    "crumbs": [
+      "Home"
     ]
   }
 ]
