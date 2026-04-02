@@ -60,69 +60,39 @@
     ]
   },
   {
-    "objectID": "projects/project-popgen-pca.html#overview",
-    "href": "projects/project-popgen-pca.html#overview",
-    "title": "Population Structure and PCA Workflow",
+    "objectID": "projects/project-gwas-quinoa.html#overview",
+    "href": "projects/project-gwas-quinoa.html#overview",
+    "title": "Genome-Wide Association in Quinoa",
     "section": "Overview",
-    "text": "Overview\nDescribe the objective of population structure analysis."
+    "text": "Overview\nShort summary of the project objective and biological question."
   },
   {
-    "objectID": "projects/project-popgen-pca.html#methods",
-    "href": "projects/project-popgen-pca.html#methods",
-    "title": "Population Structure and PCA Workflow",
+    "objectID": "projects/project-gwas-quinoa.html#your-role",
+    "href": "projects/project-gwas-quinoa.html#your-role",
+    "title": "Genome-Wide Association in Quinoa",
+    "section": "Your Role",
+    "text": "Your Role\nDescribe your contributions (analysis, data curation, writing, supervision)."
+  },
+  {
+    "objectID": "projects/project-gwas-quinoa.html#methods",
+    "href": "projects/project-gwas-quinoa.html#methods",
+    "title": "Genome-Wide Association in Quinoa",
     "section": "Methods",
-    "text": "Methods\n\nVariant QC and file preparation\nPrincipal component analysis\nCovariate table construction"
+    "text": "Methods\n\nGenotyping and variant filtering\nGWAS model setup\nCovariate correction and interpretation"
   },
   {
-    "objectID": "projects/project-popgen-pca.html#results",
-    "href": "projects/project-popgen-pca.html#results",
-    "title": "Population Structure and PCA Workflow",
+    "objectID": "projects/project-gwas-quinoa.html#results",
+    "href": "projects/project-gwas-quinoa.html#results",
+    "title": "Genome-Wide Association in Quinoa",
     "section": "Results",
-    "text": "Results\nAdd PCA plots and concise interpretation of clusters."
+    "text": "Results\nAdd key figures, tables, and bullet-point findings."
   },
   {
-    "objectID": "projects/project-popgen-pca.html#reproducibility",
-    "href": "projects/project-popgen-pca.html#reproducibility",
-    "title": "Population Structure and PCA Workflow",
-    "section": "Reproducibility",
-    "text": "Reproducibility\nInclude commands or script names used in the analysis."
-  },
-  {
-    "objectID": "projects/project-popgen-pca.html#links",
-    "href": "projects/project-popgen-pca.html#links",
-    "title": "Population Structure and PCA Workflow",
+    "objectID": "projects/project-gwas-quinoa.html#links",
+    "href": "projects/project-gwas-quinoa.html#links",
+    "title": "Genome-Wide Association in Quinoa",
     "section": "Links",
-    "text": "Links\n\nRepository: Add repo link\nNotebook or report: Add document link"
-  },
-  {
-    "objectID": "projects/index.html",
-    "href": "projects/index.html",
-    "title": "Projects",
-    "section": "",
-    "text": "A curated set of research and data projects.",
-    "crumbs": [
-      "Projects"
-    ]
-  },
-  {
-    "objectID": "projects/index.html#featured-projects",
-    "href": "projects/index.html#featured-projects",
-    "title": "Projects",
-    "section": "Featured Projects",
-    "text": "Featured Projects\n\n\n  \n\nGenome-Wide Association in Quinoa\n\nAssociation mapping workflow using filtered variants, covariates, and model diagnostics.\n\n\nGWAS Quinoa Genomics\n\n\n\n\n  \n\nDisease Phenotyping and AUDPC Analysis\n\nPhenotype harmonization, replicate handling, BLUP estimation, and disease summary plots.\n\n\nAUDPC BLUP Phenotypes\n\n\n\n\n  \n\nPopulation Structure and PCA Workflow\n\nVariant quality control and principal component analysis for population structure inference.\n\n\nPCA Population Genomics QC",
-    "crumbs": [
-      "Projects"
-    ]
-  },
-  {
-    "objectID": "projects/index.html#add-a-new-project",
-    "href": "projects/index.html#add-a-new-project",
-    "title": "Projects",
-    "section": "Add a New Project",
-    "text": "Add a New Project\n\nCreate a new .qmd file in projects/.\nCopy one project card block and update title, description, tags, and link.\nCommit and push to main.",
-    "crumbs": [
-      "Projects"
-    ]
+    "text": "Links\n\nRepository: Add repo link\nReport or manuscript: Add document link"
   },
   {
     "objectID": "projects/project-audpc-pipeline.html#overview",
@@ -160,39 +130,111 @@
     "text": "Links\n\nRepository: Add repo link\nSlides or notes: Add document link"
   },
   {
-    "objectID": "projects/project-gwas-quinoa.html#overview",
-    "href": "projects/project-gwas-quinoa.html#overview",
-    "title": "Genome-Wide Association in Quinoa",
+    "objectID": "projects/index.html",
+    "href": "projects/index.html",
+    "title": "Projects",
+    "section": "",
+    "text": "A curated set of research and data projects.",
+    "crumbs": [
+      "Projects"
+    ]
+  },
+  {
+    "objectID": "projects/index.html#featured-projects",
+    "href": "projects/index.html#featured-projects",
+    "title": "Projects",
+    "section": "Featured Projects",
+    "text": "Featured Projects\n\n\n  \n\nGenome-Wide Association in Quinoa\n\nAssociation mapping workflow using filtered variants, covariates, and model diagnostics.\n\n\nGWAS Quinoa Genomics\n\n\n\n\n  \n\nDisease Phenotyping and AUDPC Analysis\n\nPhenotype harmonization, replicate handling, BLUP estimation, and disease summary plots.\n\n\nAUDPC BLUP Phenotypes\n\n\n\n\n  \n\nPopulation Structure and PCA Workflow\n\nVariant quality control and principal component analysis for population structure inference.\n\n\nPCA Population Genomics QC",
+    "crumbs": [
+      "Projects"
+    ]
+  },
+  {
+    "objectID": "projects/index.html#add-a-new-project",
+    "href": "projects/index.html#add-a-new-project",
+    "title": "Projects",
+    "section": "Add a New Project",
+    "text": "Add a New Project\n\nCreate a new .qmd file in projects/.\nCopy one project card block and update title, description, tags, and link.\nCommit and push to main.",
+    "crumbs": [
+      "Projects"
+    ]
+  },
+  {
+    "objectID": "projects/project-popgen-pca.html#overview",
+    "href": "projects/project-popgen-pca.html#overview",
+    "title": "Population Structure and PCA Workflow",
     "section": "Overview",
-    "text": "Overview\nShort summary of the project objective and biological question."
+    "text": "Overview\nDescribe the objective of population structure analysis."
   },
   {
-    "objectID": "projects/project-gwas-quinoa.html#your-role",
-    "href": "projects/project-gwas-quinoa.html#your-role",
-    "title": "Genome-Wide Association in Quinoa",
-    "section": "Your Role",
-    "text": "Your Role\nDescribe your contributions (analysis, data curation, writing, supervision)."
-  },
-  {
-    "objectID": "projects/project-gwas-quinoa.html#methods",
-    "href": "projects/project-gwas-quinoa.html#methods",
-    "title": "Genome-Wide Association in Quinoa",
+    "objectID": "projects/project-popgen-pca.html#methods",
+    "href": "projects/project-popgen-pca.html#methods",
+    "title": "Population Structure and PCA Workflow",
     "section": "Methods",
-    "text": "Methods\n\nGenotyping and variant filtering\nGWAS model setup\nCovariate correction and interpretation"
+    "text": "Methods\n\nVariant QC and file preparation\nPrincipal component analysis\nCovariate table construction"
   },
   {
-    "objectID": "projects/project-gwas-quinoa.html#results",
-    "href": "projects/project-gwas-quinoa.html#results",
-    "title": "Genome-Wide Association in Quinoa",
+    "objectID": "projects/project-popgen-pca.html#results",
+    "href": "projects/project-popgen-pca.html#results",
+    "title": "Population Structure and PCA Workflow",
     "section": "Results",
-    "text": "Results\nAdd key figures, tables, and bullet-point findings."
+    "text": "Results\nAdd PCA plots and concise interpretation of clusters."
   },
   {
-    "objectID": "projects/project-gwas-quinoa.html#links",
-    "href": "projects/project-gwas-quinoa.html#links",
-    "title": "Genome-Wide Association in Quinoa",
+    "objectID": "projects/project-popgen-pca.html#reproducibility",
+    "href": "projects/project-popgen-pca.html#reproducibility",
+    "title": "Population Structure and PCA Workflow",
+    "section": "Reproducibility",
+    "text": "Reproducibility\nInclude commands or script names used in the analysis."
+  },
+  {
+    "objectID": "projects/project-popgen-pca.html#links",
+    "href": "projects/project-popgen-pca.html#links",
+    "title": "Population Structure and PCA Workflow",
     "section": "Links",
-    "text": "Links\n\nRepository: Add repo link\nReport or manuscript: Add document link"
+    "text": "Links\n\nRepository: Add repo link\nNotebook or report: Add document link"
+  },
+  {
+    "objectID": "GIT_STATUS_AND_PUSH_GUIDE.html",
+    "href": "GIT_STATUS_AND_PUSH_GUIDE.html",
+    "title": "Git Status, Commit, and Push Guide",
+    "section": "",
+    "text": "This guide shows how to check whether your repository is up to date, and when you should commit or push.\n\n\nRun:\ngit fetch\ngit status -sb\nHow to read the output:\n\n## main...origin/main -&gt; local and remote are synced.\n## main...origin/main [ahead 1] -&gt; local has commits not on remote. You need to push.\n## main...origin/main [behind 2] -&gt; remote has commits not local. You need to pull/rebase.\n## main...origin/main [ahead 1, behind 1] -&gt; both changed. Sync carefully (pull/rebase, resolve conflicts if needed).\n\n\n\n\nRun:\ngit status --short\nIf output has lines like these, you have local changes to commit:\n\nM file (modified)\nA file (added)\n?? file (untracked)\n\nIf no output appears, there are no local file changes.\n\n\n\n# Check state\ngit fetch\ngit status -sb\ngit status --short\n\n# If files changed locally -&gt; commit\ngit add .\ngit commit -m \"Your message\"\n\n# If branch is ahead -&gt; push\ngit push\n\n\n\nLocal commits not on remote (means push needed):\ngit log --oneline origin/main..main\nRemote commits not on local (means pull/rebase needed):\ngit log --oneline main..origin/main\n\n\n\n\nFiles changed locally? -&gt; Commit.\nBranch ahead of origin? -&gt; Push.\nBranch behind origin? -&gt; Pull/rebase before pushing."
+  },
+  {
+    "objectID": "GIT_STATUS_AND_PUSH_GUIDE.html#check-sync-with-remote",
+    "href": "GIT_STATUS_AND_PUSH_GUIDE.html#check-sync-with-remote",
+    "title": "Git Status, Commit, and Push Guide",
+    "section": "",
+    "text": "Run:\ngit fetch\ngit status -sb\nHow to read the output:\n\n## main...origin/main -&gt; local and remote are synced.\n## main...origin/main [ahead 1] -&gt; local has commits not on remote. You need to push.\n## main...origin/main [behind 2] -&gt; remote has commits not local. You need to pull/rebase.\n## main...origin/main [ahead 1, behind 1] -&gt; both changed. Sync carefully (pull/rebase, resolve conflicts if needed)."
+  },
+  {
+    "objectID": "GIT_STATUS_AND_PUSH_GUIDE.html#check-if-you-need-to-commit",
+    "href": "GIT_STATUS_AND_PUSH_GUIDE.html#check-if-you-need-to-commit",
+    "title": "Git Status, Commit, and Push Guide",
+    "section": "",
+    "text": "Run:\ngit status --short\nIf output has lines like these, you have local changes to commit:\n\nM file (modified)\nA file (added)\n?? file (untracked)\n\nIf no output appears, there are no local file changes."
+  },
+  {
+    "objectID": "GIT_STATUS_AND_PUSH_GUIDE.html#typical-workflow",
+    "href": "GIT_STATUS_AND_PUSH_GUIDE.html#typical-workflow",
+    "title": "Git Status, Commit, and Push Guide",
+    "section": "",
+    "text": "# Check state\ngit fetch\ngit status -sb\ngit status --short\n\n# If files changed locally -&gt; commit\ngit add .\ngit commit -m \"Your message\"\n\n# If branch is ahead -&gt; push\ngit push"
+  },
+  {
+    "objectID": "GIT_STATUS_AND_PUSH_GUIDE.html#extra-checks-very-useful",
+    "href": "GIT_STATUS_AND_PUSH_GUIDE.html#extra-checks-very-useful",
+    "title": "Git Status, Commit, and Push Guide",
+    "section": "",
+    "text": "Local commits not on remote (means push needed):\ngit log --oneline origin/main..main\nRemote commits not on local (means pull/rebase needed):\ngit log --oneline main..origin/main"
+  },
+  {
+    "objectID": "GIT_STATUS_AND_PUSH_GUIDE.html#quick-decision-rules",
+    "href": "GIT_STATUS_AND_PUSH_GUIDE.html#quick-decision-rules",
+    "title": "Git Status, Commit, and Push Guide",
+    "section": "",
+    "text": "Files changed locally? -&gt; Commit.\nBranch ahead of origin? -&gt; Push.\nBranch behind origin? -&gt; Pull/rebase before pushing."
   },
   {
     "objectID": "index.html",
