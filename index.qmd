@@ -1,45 +1,43 @@
 ---
 title: "Abdubidopsis"
-subtitle: "A Quarto website for research, writing, and project updates"
+subtitle: "Evolutionary and Computational Biology"
 ---
 
-::: {.hero}
-# Research updates, project notes, and useful links
-
-This site is a compact Quarto starter you can publish on GitHub Pages and extend with project pages, notes, and reports.
-
-- Write pages in `.qmd`
-- Preview locally with `quarto preview`
-- Publish automatically from GitHub Actions
+::: {.profile-hero}
+::: {.columns}
+::: {.column width="34%"}
+![](profile.svg){.profile-photo fig-alt="Profile photo"}
 :::
 
-## What this site can hold
+::: {.column width="66%"}
+# Abdubidopsis
 
-::: {.grid}
+Evolutionary and Computational Biologist | Plant Genomics | Data-Driven Biology
 
-::: {.g-col-12 .g-col-md-4}
-### Project updates
+Institute for Plant Sciences, University of Cologne  
+Cologne, Germany
 
-Short posts or notes about what you are working on.
+Email: [abdubidopsis@users.noreply.github.com](mailto:abdubidopsis@users.noreply.github.com)  
+GitHub: [Abdubidopsis](https://github.com/Abdubidopsis)
+:::
+:::
 :::
 
-::: {.g-col-12 .g-col-md-4}
-### Documentation
+## My Journey in Science
 
-Methods, workflows, and supporting explanations.
-:::
+I am interested in how genomes record adaptation across time and space. My work combines evolutionary biology, quantitative genetics, and reproducible data workflows to study biological complexity under changing environments.
 
-::: {.g-col-12 .g-col-md-4}
-### Results
+I enjoy building practical pipelines that turn raw sequencing and phenotypic datasets into interpretable biological insights. This includes statistical modeling, machine learning, and careful data curation, especially in crop and ecological genomics.
 
-Figures, tables, and summaries from analyses.
-:::
+Teaching and mentoring are central to how I work. I value clear explanation, open workflows, and helping students connect computation with biological questions.
 
-:::
+## Additional Links
 
-## How to publish
+- [GitHub Projects](https://github.com/Abdubidopsis?tab=repositories)
+- [About This Website](about.qmd)
 
-1. Commit the files to the `main` branch.
-2. Push the repository to GitHub.
-3. Enable GitHub Pages for the `gh-pages` branch, or let the workflow deploy it.
-4. Keep editing the `.qmd` files and push again.
+## A Personal Note
+
+The mystery of human existence lies not in just staying alive, but in finding something to live for.
+
+_F. Dostoevsky_

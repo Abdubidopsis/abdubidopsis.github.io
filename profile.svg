@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="720" height="900" viewBox="0 0 720 900" role="img" aria-labelledby="title desc">
+  <title id="title">Profile Placeholder</title>
+  <desc id="desc">A neutral placeholder portrait for a personal website profile image.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#1f4e5f"/>
+      <stop offset="100%" stop-color="#3f7c85"/>
+    </linearGradient>
+  </defs>
+  <rect width="720" height="900" fill="url(#bg)"/>
+  <circle cx="360" cy="320" r="140" fill="#e8efe9" opacity="0.95"/>
+  <path d="M170 760c24-152 130-230 190-230s166 78 190 230" fill="#e8efe9" opacity="0.95"/>
+  <text x="360" y="845" text-anchor="middle" font-family="Georgia, serif" font-size="34" fill="#f7f3ea">Add your profile photo</text>
+</svg>

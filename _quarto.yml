@@ -12,10 +12,8 @@ website:
 
 format:
   html:
-    theme:
-      light: flatly
-      dark: darkly
+    theme: litera
     css: styles.css
-    toc: true
+    toc: false
 
 editor: visual
