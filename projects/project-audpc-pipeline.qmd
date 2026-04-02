@@ -1,0 +1,26 @@
+---
+title: "Disease Phenotyping and AUDPC Analysis"
+---
+
+## Overview
+
+Summarize the disease scoring workflow and experimental context.
+
+## Data
+
+List dataset source, format, and sampling details.
+
+## Methods
+
+- Replicate-level AUDPC calculations
+- BLUP estimation by accession
+- Quality checks and visualization
+
+## Results
+
+Document major outputs and interpretation.
+
+## Links
+
+- Repository: [Add repo link](https://github.com/Abdubidopsis)
+- Slides or notes: [Add document link](https://example.com)

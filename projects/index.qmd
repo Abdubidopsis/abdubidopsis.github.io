@@ -1,0 +1,17 @@
+---
+title: "Projects"
+---
+
+A curated list of research and data projects.
+
+## Featured Projects
+
+- [Genome-Wide Association in Quinoa](project-gwas-quinoa.qmd)
+- [Disease Phenotyping and AUDPC Analysis](project-audpc-pipeline.qmd)
+- [Population Structure and PCA Workflow](project-popgen-pca.qmd)
+
+## Add a New Project
+
+1. Create a new `.qmd` file in `projects/`.
+2. Add the project link in this page.
+3. Commit and push to `main`.

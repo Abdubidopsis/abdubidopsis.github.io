@@ -1,0 +1,26 @@
+---
+title: "Genome-Wide Association in Quinoa"
+---
+
+## Overview
+
+Short summary of the project objective and biological question.
+
+## Your Role
+
+Describe your contributions (analysis, data curation, writing, supervision).
+
+## Methods
+
+- Genotyping and variant filtering
+- GWAS model setup
+- Covariate correction and interpretation
+
+## Results
+
+Add key figures, tables, and bullet-point findings.
+
+## Links
+
+- Repository: [Add repo link](https://github.com/Abdubidopsis)
+- Report or manuscript: [Add document link](https://example.com)

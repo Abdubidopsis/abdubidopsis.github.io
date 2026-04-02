@@ -9,6 +9,8 @@ website:
         text: Home
       - href: about.qmd
         text: About
+      - href: projects/index.qmd
+        text: Projects
 
 format:
   html:

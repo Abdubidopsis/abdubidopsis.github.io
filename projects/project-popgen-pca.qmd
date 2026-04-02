@@ -1,0 +1,26 @@
+---
+title: "Population Structure and PCA Workflow"
+---
+
+## Overview
+
+Describe the objective of population structure analysis.
+
+## Methods
+
+- Variant QC and file preparation
+- Principal component analysis
+- Covariate table construction
+
+## Results
+
+Add PCA plots and concise interpretation of clusters.
+
+## Reproducibility
+
+Include commands or script names used in the analysis.
+
+## Links
+
+- Repository: [Add repo link](https://github.com/Abdubidopsis)
+- Notebook or report: [Add document link](https://example.com)
