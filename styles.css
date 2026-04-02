@@ -279,7 +279,9 @@ a.project-tag-link:focus {
   box-shadow: 0 4px 10px rgba(43, 108, 176, 0.12);
 }
 
-html[data-bs-theme="dark"] body {
+html[data-bs-theme="dark"],
+body[data-bs-theme="dark"],
+html.theme-dark {
   background:
     radial-gradient(circle at 14% 0%, rgba(96, 165, 250, 0.14), transparent 26%),
     radial-gradient(circle at 100% 18%, rgba(96, 165, 250, 0.09), transparent 32%),
@@ -287,12 +289,43 @@ html[data-bs-theme="dark"] body {
   color: #dbe7f5;
 }
 
-html[data-bs-theme="dark"] .navbar {
-  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
-  background: rgba(15, 23, 42, 0.88);
+html[data-bs-theme="dark"] body,
+body[data-bs-theme="dark"] {
+  background:
+    radial-gradient(circle at 14% 0%, rgba(96, 165, 250, 0.14), transparent 26%),
+    radial-gradient(circle at 100% 18%, rgba(96, 165, 250, 0.09), transparent 32%),
+    linear-gradient(180deg, #0f172a 0%, #111827 100%);
+  color: #dbe7f5;
 }
 
-html[data-bs-theme="dark"] .profile-hero {
+html[data-bs-theme="dark"] .navbar,
+body[data-bs-theme="dark"] .navbar {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+  background: rgba(15, 23, 42, 0.92);
+}
+
+html[data-bs-theme="dark"] .sidebar,
+body[data-bs-theme="dark"] .sidebar,
+html.theme-dark .sidebar {
+  background: rgba(15, 23, 42, 0.92);
+  color: #dbe7f5;
+}
+
+html[data-bs-theme="dark"] .sidebar a,
+body[data-bs-theme="dark"] .sidebar a,
+html.theme-dark .sidebar a {
+  color: #dbe7f5;
+}
+
+html[data-bs-theme="dark"] main.content,
+body[data-bs-theme="dark"] main.content,
+html.theme-dark main.content {
+  color: #dbe7f5;
+}
+
+html[data-bs-theme="dark"] .profile-hero,
+body[data-bs-theme="dark"] .profile-hero,
+html.theme-dark .profile-hero {
   background: linear-gradient(135deg, rgba(15, 23, 42, 0.96) 0%, rgba(30, 41, 59, 0.96) 100%);
   color: #e5eefb;
   border: 1px solid rgba(96, 165, 250, 0.18);
@@ -304,64 +337,85 @@ html[data-bs-theme="dark"] .profile-hero h1,
 html[data-bs-theme="dark"] .profile-hero h2,
 html[data-bs-theme="dark"] .profile-hero h3,
 html[data-bs-theme="dark"] .profile-hero p,
-html[data-bs-theme="dark"] .profile-hero li {
+html[data-bs-theme="dark"] .profile-hero li,
+body[data-bs-theme="dark"] .profile-hero h1,
+body[data-bs-theme="dark"] .profile-hero h2,
+body[data-bs-theme="dark"] .profile-hero h3,
+body[data-bs-theme="dark"] .profile-hero p,
+body[data-bs-theme="dark"] .profile-hero li {
   color: #e5eefb;
 }
 
-html[data-bs-theme="dark"] .profile-hero a {
+html[data-bs-theme="dark"] .profile-hero a,
+body[data-bs-theme="dark"] .profile-hero a {
   color: #93c5fd;
 }
 
-html[data-bs-theme="dark"] .social-link {
+html[data-bs-theme="dark"] .social-link,
+body[data-bs-theme="dark"] .social-link {
   border-color: rgba(96, 165, 250, 0.22);
   color: #dbeafe;
   background: rgba(30, 41, 59, 0.92);
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.26);
 }
 
-html[data-bs-theme="dark"] .social-link:hover {
+html[data-bs-theme="dark"] .social-link:hover,
+body[data-bs-theme="dark"] .social-link:hover {
   color: #0f172a;
   background: #93c5fd;
 }
 
 html[data-bs-theme="dark"] .profile-photo,
 html[data-bs-theme="dark"] .project-page-banner,
-html[data-bs-theme="dark"] .project-banner {
+html[data-bs-theme="dark"] .project-banner,
+body[data-bs-theme="dark"] .profile-photo,
+body[data-bs-theme="dark"] .project-page-banner,
+body[data-bs-theme="dark"] .project-banner {
   border-color: rgba(96, 165, 250, 0.2);
   box-shadow: 0 10px 28px rgba(0, 0, 0, 0.28);
 }
 
 html[data-bs-theme="dark"] h1,
 html[data-bs-theme="dark"] h2,
-html[data-bs-theme="dark"] h3 {
+html[data-bs-theme="dark"] h3,
+body[data-bs-theme="dark"] h1,
+body[data-bs-theme="dark"] h2,
+body[data-bs-theme="dark"] h3 {
   color: #dbeafe;
 }
 
-html[data-bs-theme="dark"] .project-card {
+html[data-bs-theme="dark"] .project-card,
+body[data-bs-theme="dark"] .project-card {
   background: rgba(17, 24, 39, 0.94);
   border-color: rgba(96, 165, 250, 0.16);
   box-shadow: 0 10px 22px rgba(0, 0, 0, 0.24);
 }
 
-html[data-bs-theme="dark"] .project-card:hover {
+html[data-bs-theme="dark"] .project-card:hover,
+body[data-bs-theme="dark"] .project-card:hover {
   box-shadow: 0 14px 26px rgba(0, 0, 0, 0.3);
 }
 
 html[data-bs-theme="dark"] a.project-tag-link,
-html[data-bs-theme="dark"] a.project-tag-link:visited {
+html[data-bs-theme="dark"] a.project-tag-link:visited,
+body[data-bs-theme="dark"] a.project-tag-link,
+body[data-bs-theme="dark"] a.project-tag-link:visited {
   background: rgba(96, 165, 250, 0.12);
   border-color: rgba(96, 165, 250, 0.2);
   color: #dbeafe;
 }
 
 html[data-bs-theme="dark"] a.project-tag-link:hover,
-html[data-bs-theme="dark"] a.project-tag-link:focus {
+html[data-bs-theme="dark"] a.project-tag-link:focus,
+body[data-bs-theme="dark"] a.project-tag-link:hover,
+body[data-bs-theme="dark"] a.project-tag-link:focus {
   background: rgba(96, 165, 250, 0.24);
   border-color: rgba(96, 165, 250, 0.4);
   color: #ffffff;
 }
 
-html[data-bs-theme="dark"] .project-page-banner {
+html[data-bs-theme="dark"] .project-page-banner,
+body[data-bs-theme="dark"] .project-page-banner {
   box-shadow: 0 12px 26px rgba(0, 0, 0, 0.3);
 }
 
