@@ -1,4 +1,4 @@
-# Abdubidopsis Quarto Website
+# Welcome to Abdubidopsis Profile
 
 A minimal Quarto website scaffold ready for GitHub Pages.
 
