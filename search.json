@@ -197,44 +197,86 @@
   {
     "objectID": "GIT_STATUS_AND_PUSH_GUIDE.html",
     "href": "GIT_STATUS_AND_PUSH_GUIDE.html",
-    "title": "Git Status, Commit, and Push Guide",
+    "title": "Git Status, Commit, Push, and Sync Guide (Beginner-Friendly)",
     "section": "",
-    "text": "This guide shows how to check whether your repository is up to date, and when you should commit or push.\n\n\nRun:\ngit fetch\ngit status -sb\nHow to read the output:\n\n## main...origin/main -&gt; local and remote are synced.\n## main...origin/main [ahead 1] -&gt; local has commits not on remote. You need to push.\n## main...origin/main [behind 2] -&gt; remote has commits not local. You need to pull/rebase.\n## main...origin/main [ahead 1, behind 1] -&gt; both changed. Sync carefully (pull/rebase, resolve conflicts if needed).\n\n\n\n\nRun:\ngit status --short\nIf output has lines like these, you have local changes to commit:\n\nM file (modified)\nA file (added)\n?? file (untracked)\n\nIf no output appears, there are no local file changes.\n\n\n\n# Check state\ngit fetch\ngit status -sb\ngit status --short\n\n# If files changed locally -&gt; commit\ngit add .\ngit commit -m \"Your message\"\n\n# If branch is ahead -&gt; push\ngit push\n\n\n\nLocal commits not on remote (means push needed):\ngit log --oneline origin/main..main\nRemote commits not on local (means pull/rebase needed):\ngit log --oneline main..origin/main\n\n\n\n\nFiles changed locally? -&gt; Commit.\nBranch ahead of origin? -&gt; Push.\nBranch behind origin? -&gt; Pull/rebase before pushing."
+    "text": "This guide is for first-time users and daily users. It explains:\n\nhow to check if your local repo is up to date,\nwhen to commit,\nwhen to push,\nhow to bring online (GitHub) changes into your local computer,\nand what to do if conflicts happen.\n\n\n\nSet your name and email once on your computer:\ngit config --global user.name \"Your Name\"\ngit config --global user.email \"you@example.com\"\nCheck that it is set:\ngit config --global --list\n\n\n\ngit clone https://github.com/OWNER/REPO.git\ncd REPO\nIf the repo already exists on your machine, just enter it:\ncd /path/to/repo\n\n\n\ngit fetch\ngit status -sb\ngit status --short\nHow to read git status -sb:\n\n## main...origin/main -&gt; local and remote are synced.\n## main...origin/main [ahead 1] -&gt; local has commits not on remote. Push is needed.\n## main...origin/main [behind 2] -&gt; remote has commits not local. Pull/rebase is needed.\n## main...origin/main [ahead 1, behind 1] -&gt; both changed. Pull/rebase, then push.\n\nHow to read git status --short:\n\nM file -&gt; modified file.\nA file -&gt; staged new file.\n?? file -&gt; untracked new file.\nno output -&gt; no local file changes.\n\n\n\n\nCommit when you changed files locally and want to save a checkpoint in git.\ngit add .\ngit commit -m \"Clear message about what changed\"\nYou do not need to commit if no files changed.\n\n\n\nPush when local branch is ahead of remote (you have local commits not on GitHub).\ngit push\n\n\n\nRecommended safe flow:\ngit fetch\ngit pull --rebase\nWhy --rebase: cleaner history with fewer merge commits.\n\n\n\nOption A (if changes are ready): commit first, then pull.\ngit add .\ngit commit -m \"WIP before pulling\"\ngit pull --rebase\nOption B (if changes are not ready): stash, pull, then restore.\ngit stash\ngit pull --rebase\ngit stash pop\n\n\n\nIf git reports conflicts during rebase/pull:\n\nOpen files and resolve conflict markers (&lt;&lt;&lt;&lt;&lt;&lt;&lt;, =======, &gt;&gt;&gt;&gt;&gt;&gt;&gt;).\nStage resolved files.\nContinue rebase.\n\ngit add .\ngit rebase --continue\nIf needed, cancel rebase:\ngit rebase --abort\n\n\n\n# Start\ngit fetch\ngit status -sb\n\n# Bring latest remote updates first if behind\ngit pull --rebase\n\n# Work on files...\n\n# Save your work\ngit add .\ngit commit -m \"Describe change\"\n\n# Publish\ngit push\n\n\n\nLocal commits not on remote:\ngit log --oneline origin/main..main\nRemote commits not on local:\ngit log --oneline main..origin/main\n\n\n\n\nFiles changed locally? -&gt; Commit.\nBranch ahead of origin? -&gt; Push.\nBranch behind origin? -&gt; Pull/rebase before pushing.\nAhead and behind? -&gt; Pull/rebase, resolve conflicts, then push."
   },
   {
-    "objectID": "GIT_STATUS_AND_PUSH_GUIDE.html#check-sync-with-remote",
-    "href": "GIT_STATUS_AND_PUSH_GUIDE.html#check-sync-with-remote",
-    "title": "Git Status, Commit, and Push Guide",
+    "objectID": "GIT_STATUS_AND_PUSH_GUIDE.html#one-time-setup-first-time-only",
+    "href": "GIT_STATUS_AND_PUSH_GUIDE.html#one-time-setup-first-time-only",
+    "title": "Git Status, Commit, Push, and Sync Guide (Beginner-Friendly)",
     "section": "",
-    "text": "Run:\ngit fetch\ngit status -sb\nHow to read the output:\n\n## main...origin/main -&gt; local and remote are synced.\n## main...origin/main [ahead 1] -&gt; local has commits not on remote. You need to push.\n## main...origin/main [behind 2] -&gt; remote has commits not local. You need to pull/rebase.\n## main...origin/main [ahead 1, behind 1] -&gt; both changed. Sync carefully (pull/rebase, resolve conflicts if needed)."
+    "text": "Set your name and email once on your computer:\ngit config --global user.name \"Your Name\"\ngit config --global user.email \"you@example.com\"\nCheck that it is set:\ngit config --global --list"
   },
   {
-    "objectID": "GIT_STATUS_AND_PUSH_GUIDE.html#check-if-you-need-to-commit",
-    "href": "GIT_STATUS_AND_PUSH_GUIDE.html#check-if-you-need-to-commit",
-    "title": "Git Status, Commit, and Push Guide",
+    "objectID": "GIT_STATUS_AND_PUSH_GUIDE.html#clone-a-repo-first-time-for-a-project",
+    "href": "GIT_STATUS_AND_PUSH_GUIDE.html#clone-a-repo-first-time-for-a-project",
+    "title": "Git Status, Commit, Push, and Sync Guide (Beginner-Friendly)",
     "section": "",
-    "text": "Run:\ngit status --short\nIf output has lines like these, you have local changes to commit:\n\nM file (modified)\nA file (added)\n?? file (untracked)\n\nIf no output appears, there are no local file changes."
+    "text": "git clone https://github.com/OWNER/REPO.git\ncd REPO\nIf the repo already exists on your machine, just enter it:\ncd /path/to/repo"
   },
   {
-    "objectID": "GIT_STATUS_AND_PUSH_GUIDE.html#typical-workflow",
-    "href": "GIT_STATUS_AND_PUSH_GUIDE.html#typical-workflow",
-    "title": "Git Status, Commit, and Push Guide",
+    "objectID": "GIT_STATUS_AND_PUSH_GUIDE.html#check-current-state-quickly",
+    "href": "GIT_STATUS_AND_PUSH_GUIDE.html#check-current-state-quickly",
+    "title": "Git Status, Commit, Push, and Sync Guide (Beginner-Friendly)",
     "section": "",
-    "text": "# Check state\ngit fetch\ngit status -sb\ngit status --short\n\n# If files changed locally -&gt; commit\ngit add .\ngit commit -m \"Your message\"\n\n# If branch is ahead -&gt; push\ngit push"
+    "text": "git fetch\ngit status -sb\ngit status --short\nHow to read git status -sb:\n\n## main...origin/main -&gt; local and remote are synced.\n## main...origin/main [ahead 1] -&gt; local has commits not on remote. Push is needed.\n## main...origin/main [behind 2] -&gt; remote has commits not local. Pull/rebase is needed.\n## main...origin/main [ahead 1, behind 1] -&gt; both changed. Pull/rebase, then push.\n\nHow to read git status --short:\n\nM file -&gt; modified file.\nA file -&gt; staged new file.\n?? file -&gt; untracked new file.\nno output -&gt; no local file changes."
   },
   {
-    "objectID": "GIT_STATUS_AND_PUSH_GUIDE.html#extra-checks-very-useful",
-    "href": "GIT_STATUS_AND_PUSH_GUIDE.html#extra-checks-very-useful",
-    "title": "Git Status, Commit, and Push Guide",
+    "objectID": "GIT_STATUS_AND_PUSH_GUIDE.html#when-do-you-need-to-commit",
+    "href": "GIT_STATUS_AND_PUSH_GUIDE.html#when-do-you-need-to-commit",
+    "title": "Git Status, Commit, Push, and Sync Guide (Beginner-Friendly)",
     "section": "",
-    "text": "Local commits not on remote (means push needed):\ngit log --oneline origin/main..main\nRemote commits not on local (means pull/rebase needed):\ngit log --oneline main..origin/main"
+    "text": "Commit when you changed files locally and want to save a checkpoint in git.\ngit add .\ngit commit -m \"Clear message about what changed\"\nYou do not need to commit if no files changed."
+  },
+  {
+    "objectID": "GIT_STATUS_AND_PUSH_GUIDE.html#when-do-you-need-to-push",
+    "href": "GIT_STATUS_AND_PUSH_GUIDE.html#when-do-you-need-to-push",
+    "title": "Git Status, Commit, Push, and Sync Guide (Beginner-Friendly)",
+    "section": "",
+    "text": "Push when local branch is ahead of remote (you have local commits not on GitHub).\ngit push"
+  },
+  {
+    "objectID": "GIT_STATUS_AND_PUSH_GUIDE.html#if-someone-changed-files-online-github-update-local",
+    "href": "GIT_STATUS_AND_PUSH_GUIDE.html#if-someone-changed-files-online-github-update-local",
+    "title": "Git Status, Commit, Push, and Sync Guide (Beginner-Friendly)",
+    "section": "",
+    "text": "Recommended safe flow:\ngit fetch\ngit pull --rebase\nWhy --rebase: cleaner history with fewer merge commits."
+  },
+  {
+    "objectID": "GIT_STATUS_AND_PUSH_GUIDE.html#if-you-have-local-edits-and-need-to-pull-first",
+    "href": "GIT_STATUS_AND_PUSH_GUIDE.html#if-you-have-local-edits-and-need-to-pull-first",
+    "title": "Git Status, Commit, Push, and Sync Guide (Beginner-Friendly)",
+    "section": "",
+    "text": "Option A (if changes are ready): commit first, then pull.\ngit add .\ngit commit -m \"WIP before pulling\"\ngit pull --rebase\nOption B (if changes are not ready): stash, pull, then restore.\ngit stash\ngit pull --rebase\ngit stash pop"
+  },
+  {
+    "objectID": "GIT_STATUS_AND_PUSH_GUIDE.html#conflict-handling-quick",
+    "href": "GIT_STATUS_AND_PUSH_GUIDE.html#conflict-handling-quick",
+    "title": "Git Status, Commit, Push, and Sync Guide (Beginner-Friendly)",
+    "section": "",
+    "text": "If git reports conflicts during rebase/pull:\n\nOpen files and resolve conflict markers (&lt;&lt;&lt;&lt;&lt;&lt;&lt;, =======, &gt;&gt;&gt;&gt;&gt;&gt;&gt;).\nStage resolved files.\nContinue rebase.\n\ngit add .\ngit rebase --continue\nIf needed, cancel rebase:\ngit rebase --abort"
+  },
+  {
+    "objectID": "GIT_STATUS_AND_PUSH_GUIDE.html#daily-workflow-template",
+    "href": "GIT_STATUS_AND_PUSH_GUIDE.html#daily-workflow-template",
+    "title": "Git Status, Commit, Push, and Sync Guide (Beginner-Friendly)",
+    "section": "",
+    "text": "# Start\ngit fetch\ngit status -sb\n\n# Bring latest remote updates first if behind\ngit pull --rebase\n\n# Work on files...\n\n# Save your work\ngit add .\ngit commit -m \"Describe change\"\n\n# Publish\ngit push"
+  },
+  {
+    "objectID": "GIT_STATUS_AND_PUSH_GUIDE.html#useful-checks",
+    "href": "GIT_STATUS_AND_PUSH_GUIDE.html#useful-checks",
+    "title": "Git Status, Commit, Push, and Sync Guide (Beginner-Friendly)",
+    "section": "",
+    "text": "Local commits not on remote:\ngit log --oneline origin/main..main\nRemote commits not on local:\ngit log --oneline main..origin/main"
   },
   {
     "objectID": "GIT_STATUS_AND_PUSH_GUIDE.html#quick-decision-rules",
     "href": "GIT_STATUS_AND_PUSH_GUIDE.html#quick-decision-rules",
-    "title": "Git Status, Commit, and Push Guide",
+    "title": "Git Status, Commit, Push, and Sync Guide (Beginner-Friendly)",
     "section": "",
-    "text": "Files changed locally? -&gt; Commit.\nBranch ahead of origin? -&gt; Push.\nBranch behind origin? -&gt; Pull/rebase before pushing."
+    "text": "Files changed locally? -&gt; Commit.\nBranch ahead of origin? -&gt; Push.\nBranch behind origin? -&gt; Pull/rebase before pushing.\nAhead and behind? -&gt; Pull/rebase, resolve conflicts, then push."
   },
   {
     "objectID": "index.html",

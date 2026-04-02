@@ -352,61 +352,126 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 
 
 
-<section id="git-status-commit-and-push-guide" class="level1">
-<h1>Git Status, Commit, and Push Guide</h1>
-<p>This guide shows how to check whether your repository is up to date, and when you should commit or push.</p>
-<section id="check-sync-with-remote" class="level2">
-<h2 class="anchored" data-anchor-id="check-sync-with-remote">1. Check sync with remote</h2>
-<p>Run:</p>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb1"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> fetch</span>
-<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> status <span class="at">-sb</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-<p>How to read the output:</p>
+<section id="git-status-commit-push-and-sync-guide-beginner-friendly" class="level1">
+<h1>Git Status, Commit, Push, and Sync Guide (Beginner-Friendly)</h1>
+<p>This guide is for first-time users and daily users. It explains:</p>
+<ul>
+<li>how to check if your local repo is up to date,</li>
+<li>when to commit,</li>
+<li>when to push,</li>
+<li>how to bring online (GitHub) changes into your local computer,</li>
+<li>and what to do if conflicts happen.</li>
+</ul>
+<section id="one-time-setup-first-time-only" class="level2">
+<h2 class="anchored" data-anchor-id="one-time-setup-first-time-only">1. One-time setup (first time only)</h2>
+<p>Set your name and email once on your computer:</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb1"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> config <span class="at">--global</span> user.name <span class="st">"Your Name"</span></span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> config <span class="at">--global</span> user.email <span class="st">"you@example.com"</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p>Check that it is set:</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb2"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> config <span class="at">--global</span> <span class="at">--list</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</section>
+<section id="clone-a-repo-first-time-for-a-project" class="level2">
+<h2 class="anchored" data-anchor-id="clone-a-repo-first-time-for-a-project">2. Clone a repo (first time for a project)</h2>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb3"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> clone https://github.com/OWNER/REPO.git</span>
+<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a><span class="bu">cd</span> REPO</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p>If the repo already exists on your machine, just enter it:</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb4"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="bu">cd</span> /path/to/repo</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</section>
+<section id="check-current-state-quickly" class="level2">
+<h2 class="anchored" data-anchor-id="check-current-state-quickly">3. Check current state quickly</h2>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb5"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> fetch</span>
+<span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> status <span class="at">-sb</span></span>
+<span id="cb5-3"><a href="#cb5-3" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> status <span class="at">--short</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p>How to read <code>git status -sb</code>:</p>
 <ul>
 <li><code>## main...origin/main</code> -&gt; local and remote are synced.</li>
-<li><code>## main...origin/main [ahead 1]</code> -&gt; local has commits not on remote. You need to push.</li>
-<li><code>## main...origin/main [behind 2]</code> -&gt; remote has commits not local. You need to pull/rebase.</li>
-<li><code>## main...origin/main [ahead 1, behind 1]</code> -&gt; both changed. Sync carefully (pull/rebase, resolve conflicts if needed).</li>
+<li><code>## main...origin/main [ahead 1]</code> -&gt; local has commits not on remote. Push is needed.</li>
+<li><code>## main...origin/main [behind 2]</code> -&gt; remote has commits not local. Pull/rebase is needed.</li>
+<li><code>## main...origin/main [ahead 1, behind 1]</code> -&gt; both changed. Pull/rebase, then push.</li>
 </ul>
-</section>
-<section id="check-if-you-need-to-commit" class="level2">
-<h2 class="anchored" data-anchor-id="check-if-you-need-to-commit">2. Check if you need to commit</h2>
-<p>Run:</p>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb2"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> status <span class="at">--short</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-<p>If output has lines like these, you have local changes to commit:</p>
+<p>How to read <code>git status --short</code>:</p>
 <ul>
-<li><code>M file</code> (modified)</li>
-<li><code>A file</code> (added)</li>
-<li><code>?? file</code> (untracked)</li>
+<li><code>M file</code> -&gt; modified file.</li>
+<li><code>A file</code> -&gt; staged new file.</li>
+<li><code>?? file</code> -&gt; untracked new file.</li>
+<li>no output -&gt; no local file changes.</li>
 </ul>
-<p>If no output appears, there are no local file changes.</p>
 </section>
-<section id="typical-workflow" class="level2">
-<h2 class="anchored" data-anchor-id="typical-workflow">3. Typical workflow</h2>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb3"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Check state</span></span>
-<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> fetch</span>
-<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> status <span class="at">-sb</span></span>
-<span id="cb3-4"><a href="#cb3-4" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> status <span class="at">--short</span></span>
-<span id="cb3-5"><a href="#cb3-5" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb3-6"><a href="#cb3-6" aria-hidden="true" tabindex="-1"></a><span class="co"># If files changed locally -&gt; commit</span></span>
-<span id="cb3-7"><a href="#cb3-7" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> add .</span>
-<span id="cb3-8"><a href="#cb3-8" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> commit <span class="at">-m</span> <span class="st">"Your message"</span></span>
-<span id="cb3-9"><a href="#cb3-9" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb3-10"><a href="#cb3-10" aria-hidden="true" tabindex="-1"></a><span class="co"># If branch is ahead -&gt; push</span></span>
-<span id="cb3-11"><a href="#cb3-11" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> push</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<section id="when-do-you-need-to-commit" class="level2">
+<h2 class="anchored" data-anchor-id="when-do-you-need-to-commit">4. When do you need to commit?</h2>
+<p>Commit when you changed files locally and want to save a checkpoint in git.</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb6"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> add .</span>
+<span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> commit <span class="at">-m</span> <span class="st">"Clear message about what changed"</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p>You do not need to commit if no files changed.</p>
 </section>
-<section id="extra-checks-very-useful" class="level2">
-<h2 class="anchored" data-anchor-id="extra-checks-very-useful">4. Extra checks (very useful)</h2>
-<p>Local commits not on remote (means push needed):</p>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb4"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> log <span class="at">--oneline</span> origin/main..main</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-<p>Remote commits not on local (means pull/rebase needed):</p>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb5"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> log <span class="at">--oneline</span> main..origin/main</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<section id="when-do-you-need-to-push" class="level2">
+<h2 class="anchored" data-anchor-id="when-do-you-need-to-push">5. When do you need to push?</h2>
+<p>Push when local branch is ahead of remote (you have local commits not on GitHub).</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb7"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> push</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</section>
+<section id="if-someone-changed-files-online-github-update-local" class="level2">
+<h2 class="anchored" data-anchor-id="if-someone-changed-files-online-github-update-local">6. If someone changed files online (GitHub), update local</h2>
+<p>Recommended safe flow:</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb8"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> fetch</span>
+<span id="cb8-2"><a href="#cb8-2" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> pull <span class="at">--rebase</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p>Why <code>--rebase</code>: cleaner history with fewer merge commits.</p>
+</section>
+<section id="if-you-have-local-edits-and-need-to-pull-first" class="level2">
+<h2 class="anchored" data-anchor-id="if-you-have-local-edits-and-need-to-pull-first">7. If you have local edits and need to pull first</h2>
+<p>Option A (if changes are ready): commit first, then pull.</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb9"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> add .</span>
+<span id="cb9-2"><a href="#cb9-2" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> commit <span class="at">-m</span> <span class="st">"WIP before pulling"</span></span>
+<span id="cb9-3"><a href="#cb9-3" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> pull <span class="at">--rebase</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p>Option B (if changes are not ready): stash, pull, then restore.</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb10"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> stash</span>
+<span id="cb10-2"><a href="#cb10-2" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> pull <span class="at">--rebase</span></span>
+<span id="cb10-3"><a href="#cb10-3" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> stash pop</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</section>
+<section id="conflict-handling-quick" class="level2">
+<h2 class="anchored" data-anchor-id="conflict-handling-quick">8. Conflict handling (quick)</h2>
+<p>If git reports conflicts during rebase/pull:</p>
+<ol type="1">
+<li>Open files and resolve conflict markers (<code>&lt;&lt;&lt;&lt;&lt;&lt;&lt;</code>, <code>=======</code>, <code>&gt;&gt;&gt;&gt;&gt;&gt;&gt;</code>).</li>
+<li>Stage resolved files.</li>
+<li>Continue rebase.</li>
+</ol>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb11"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> add .</span>
+<span id="cb11-2"><a href="#cb11-2" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> rebase <span class="at">--continue</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p>If needed, cancel rebase:</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb12"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb12-1"><a href="#cb12-1" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> rebase <span class="at">--abort</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</section>
+<section id="daily-workflow-template" class="level2">
+<h2 class="anchored" data-anchor-id="daily-workflow-template">9. Daily workflow template</h2>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb13"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb13-1"><a href="#cb13-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Start</span></span>
+<span id="cb13-2"><a href="#cb13-2" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> fetch</span>
+<span id="cb13-3"><a href="#cb13-3" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> status <span class="at">-sb</span></span>
+<span id="cb13-4"><a href="#cb13-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb13-5"><a href="#cb13-5" aria-hidden="true" tabindex="-1"></a><span class="co"># Bring latest remote updates first if behind</span></span>
+<span id="cb13-6"><a href="#cb13-6" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> pull <span class="at">--rebase</span></span>
+<span id="cb13-7"><a href="#cb13-7" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb13-8"><a href="#cb13-8" aria-hidden="true" tabindex="-1"></a><span class="co"># Work on files...</span></span>
+<span id="cb13-9"><a href="#cb13-9" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb13-10"><a href="#cb13-10" aria-hidden="true" tabindex="-1"></a><span class="co"># Save your work</span></span>
+<span id="cb13-11"><a href="#cb13-11" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> add .</span>
+<span id="cb13-12"><a href="#cb13-12" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> commit <span class="at">-m</span> <span class="st">"Describe change"</span></span>
+<span id="cb13-13"><a href="#cb13-13" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb13-14"><a href="#cb13-14" aria-hidden="true" tabindex="-1"></a><span class="co"># Publish</span></span>
+<span id="cb13-15"><a href="#cb13-15" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> push</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</section>
+<section id="useful-checks" class="level2">
+<h2 class="anchored" data-anchor-id="useful-checks">10. Useful checks</h2>
+<p>Local commits not on remote:</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb14"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb14-1"><a href="#cb14-1" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> log <span class="at">--oneline</span> origin/main..main</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p>Remote commits not on local:</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb15"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb15-1"><a href="#cb15-1" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> log <span class="at">--oneline</span> main..origin/main</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </section>
 <section id="quick-decision-rules" class="level2">
-<h2 class="anchored" data-anchor-id="quick-decision-rules">5. Quick decision rules</h2>
+<h2 class="anchored" data-anchor-id="quick-decision-rules">11. Quick decision rules</h2>
 <ul>
 <li>Files changed locally? -&gt; Commit.</li>
 <li>Branch ahead of origin? -&gt; Push.</li>
 <li>Branch behind origin? -&gt; Pull/rebase before pushing.</li>
+<li>Ahead and behind? -&gt; Pull/rebase, resolve conflicts, then push.</li>
 </ul>
 
 
