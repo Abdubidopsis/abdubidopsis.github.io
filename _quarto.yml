@@ -11,6 +11,8 @@ website:
         text: About
       - href: projects/index.qmd
         text: Projects
+  page-footer:
+    right: "Version: 2026-04-02"
 
 format:
   html:
