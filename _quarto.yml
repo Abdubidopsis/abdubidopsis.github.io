@@ -23,5 +23,6 @@ format:
       dark: darkly
     css: styles.css
     toc: false
+    include-after-body: theme-toggle.html
 
 editor: visual
