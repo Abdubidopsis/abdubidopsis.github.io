@@ -17,6 +17,32 @@ body {
   line-height: 1.72;
 }
 
+body,
+button,
+input,
+select,
+textarea,
+.navbar,
+.sidebar,
+.quarto-sidebar,
+.quarto-title-block,
+.quarto-title-banner,
+main,
+article,
+.content,
+.quarto-content,
+.project-card,
+.project-tags,
+.theme-toggle,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--bs-body-font-family);
+}
+
 html,
 body {
   min-height: 100%;
@@ -640,6 +666,15 @@ body.quarto-dark .page-layout-article {
   color: #dbe7f5 !important;
 }
 
+body.quarto-dark .sidebar,
+body.quarto-dark .quarto-sidebar,
+body.quarto-dark .sidebar-navigation,
+body.quarto-dark .sidebar-menu,
+body.quarto-dark .sidebar-body {
+  background: #0b1324 !important;
+  color: #dbe7f5 !important;
+}
+
 body.quarto-dark .content,
 body.quarto-dark #quarto-content,
 body.quarto-dark #quarto-document-content,
@@ -654,15 +689,6 @@ body.quarto-dark .page-columns {
 body.quarto-dark .navbar {
   border-bottom: 1px solid rgba(255, 255, 255, 0.08);
   background: rgba(15, 23, 42, 0.92);
-}
-
-body.quarto-dark .sidebar,
-body.quarto-dark .quarto-sidebar,
-body.quarto-dark .sidebar-navigation,
-body.quarto-dark .sidebar-menu,
-body.quarto-dark .sidebar-body {
-  background: rgba(15, 23, 42, 0.92) !important;
-  color: #dbe7f5 !important;
 }
 
 body.quarto-dark .sidebar a {
@@ -744,6 +770,42 @@ body.quarto-dark a.project-tag-link:focus {
 
 body.quarto-dark .quarto-color-scheme-toggle {
   display: none !important;
+}
+
+body.quarto-light .sidebar,
+body.quarto-light .quarto-sidebar,
+body.quarto-light .sidebar-navigation,
+body.quarto-light .sidebar-menu,
+body.quarto-light .sidebar-body {
+  background: #eef4ff !important;
+  color: var(--site-ink) !important;
+}
+
+body.quarto-light .content,
+body.quarto-light #quarto-content,
+body.quarto-light #quarto-document-content,
+body.quarto-light .quarto-content,
+body.quarto-light main,
+body.quarto-light article,
+body.quarto-light .page-columns,
+body.quarto-light .quarto-title-block,
+body.quarto-light .quarto-title-banner {
+  background-color: #ffffff !important;
+  color: var(--site-ink) !important;
+}
+
+body.quarto-light .navbar {
+  background: rgba(255, 255, 255, 0.84);
+}
+
+body.quarto-light .sidebar a {
+  color: var(--site-deep);
+}
+
+body.quarto-light h1,
+body.quarto-light h2,
+body.quarto-light h3 {
+  color: var(--site-deep);
 }
 
 @media (max-width: 768px) {
