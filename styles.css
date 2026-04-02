@@ -83,7 +83,15 @@ html[data-bs-theme="dark"] .theme-toggle-moon {
   display: none;
 }
 
+body.quarto-dark .theme-toggle-moon {
+  display: none;
+}
+
 html[data-bs-theme="dark"] .theme-toggle-sun {
+  display: inline-flex;
+}
+
+body.quarto-dark .theme-toggle-sun {
   display: inline-flex;
 }
 
