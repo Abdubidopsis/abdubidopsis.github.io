@@ -1,0 +1,44 @@
+[
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Abdubidopsis",
+    "section": "",
+    "text": "Evolutionary and Computational Biologist | Plant Genomics | Data-Driven Biology\nInstitute for Plant Sciences, University of Cologne\nCologne, Germany\nEmail: abdubidopsis@users.noreply.github.com\nGitHub: Abdubidopsis"
+  },
+  {
+    "objectID": "index.html#my-journey-in-science",
+    "href": "index.html#my-journey-in-science",
+    "title": "Abdubidopsis",
+    "section": "My Journey in Science",
+    "text": "My Journey in Science\nI am interested in how genomes record adaptation across time and space. My work combines evolutionary biology, quantitative genetics, and reproducible data workflows to study biological complexity under changing environments.\nI enjoy building practical pipelines that turn raw sequencing and phenotypic datasets into interpretable biological insights. This includes statistical modeling, machine learning, and careful data curation, especially in crop and ecological genomics.\nTeaching and mentoring are central to how I work. I value clear explanation, open workflows, and helping students connect computation with biological questions."
+  },
+  {
+    "objectID": "index.html#additional-links",
+    "href": "index.html#additional-links",
+    "title": "Abdubidopsis",
+    "section": "Additional Links",
+    "text": "Additional Links\n\nGitHub Projects\nAbout This Website"
+  },
+  {
+    "objectID": "index.html#a-personal-note",
+    "href": "index.html#a-personal-note",
+    "title": "Abdubidopsis",
+    "section": "A Personal Note",
+    "text": "A Personal Note\nThe mystery of human existence lies not in just staying alive, but in finding something to live for.\nF. Dostoevsky"
+  },
+  {
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "About",
+    "section": "",
+    "text": "This is a simple Quarto website for sharing project context and updates.\nUse this page to describe your project, goals, methods, or contact details."
+  },
+  {
+    "objectID": "about.html#suggested-structure",
+    "href": "about.html#suggested-structure",
+    "title": "About",
+    "section": "Suggested structure",
+    "text": "Suggested structure\n\nA short introduction to the project\nA list of pages or sections you plan to add\nLinks to GitHub, datasets, or reports"
+  }
+]

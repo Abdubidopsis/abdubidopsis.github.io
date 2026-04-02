@@ -1,1 +1,0 @@
-This is a simple Quarto website for sharing project context and updates. Use this page to describe your project, goals, methods, or contact details. ## Suggested structure - A short introduction to the project - A list of pages or sections you plan to add - Links to GitHub, datasets, or reports
