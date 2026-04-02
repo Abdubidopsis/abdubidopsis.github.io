@@ -2,16 +2,52 @@
 title: "Projects"
 ---
 
-A curated list of research and data projects.
+A curated set of research and data projects.
 
 ## Featured Projects
 
-- [Genome-Wide Association in Quinoa](project-gwas-quinoa.qmd)
-- [Disease Phenotyping and AUDPC Analysis](project-audpc-pipeline.qmd)
-- [Population Structure and PCA Workflow](project-popgen-pca.qmd)
+::: {.project-grid}
+
+::: {.project-card}
+### Genome-Wide Association in Quinoa
+
+Association mapping workflow using filtered variants, covariates, and model diagnostics.
+
+<span class="project-tag">GWAS</span>
+<span class="project-tag">Quinoa</span>
+<span class="project-tag">Genomics</span>
+
+[Open Project](project-gwas-quinoa.qmd){.project-link}
+:::
+
+::: {.project-card}
+### Disease Phenotyping and AUDPC Analysis
+
+Phenotype harmonization, replicate handling, BLUP estimation, and disease summary plots.
+
+<span class="project-tag">AUDPC</span>
+<span class="project-tag">BLUP</span>
+<span class="project-tag">Phenotypes</span>
+
+[Open Project](project-audpc-pipeline.qmd){.project-link}
+:::
+
+::: {.project-card}
+### Population Structure and PCA Workflow
+
+Variant quality control and principal component analysis for population structure inference.
+
+<span class="project-tag">PCA</span>
+<span class="project-tag">Population Genomics</span>
+<span class="project-tag">QC</span>
+
+[Open Project](project-popgen-pca.qmd){.project-link}
+:::
+
+:::
 
 ## Add a New Project
 
 1. Create a new `.qmd` file in `projects/`.
-2. Add the project link in this page.
+2. Copy one project card block and update title, description, tags, and link.
 3. Commit and push to `main`.
