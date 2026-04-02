@@ -283,6 +283,20 @@ html[data-bs-theme="dark"],
 body[data-bs-theme="dark"],
 html.theme-dark {
   color-scheme: dark;
+  --bs-body-bg: #111827;
+  --bs-body-color: #dbe7f5;
+  --bs-emphasis-color: #f8fbff;
+  --bs-secondary-color: #9db0c6;
+  --bs-tertiary-color: #7f93ab;
+  --bs-secondary-bg: #1f2937;
+  --bs-tertiary-bg: #182232;
+  --bs-border-color: rgba(148, 163, 184, 0.22);
+  --bs-link-color: #93c5fd;
+  --bs-link-hover-color: #bfdbfe;
+  --bs-card-bg: #111827;
+  --bs-card-border-color: rgba(96, 165, 250, 0.16);
+  --bs-code-bg: rgba(30, 41, 59, 0.9);
+  --bs-highlight-bg: rgba(59, 130, 246, 0.22);
   background:
     radial-gradient(circle at 14% 0%, rgba(96, 165, 250, 0.14), transparent 26%),
     radial-gradient(circle at 100% 18%, rgba(96, 165, 250, 0.09), transparent 32%),
@@ -292,11 +306,22 @@ html.theme-dark {
 
 html[data-bs-theme="dark"] body,
 body[data-bs-theme="dark"] {
+  min-height: 100vh;
   background:
     radial-gradient(circle at 14% 0%, rgba(96, 165, 250, 0.14), transparent 26%),
     radial-gradient(circle at 100% 18%, rgba(96, 165, 250, 0.09), transparent 32%),
     linear-gradient(180deg, #0f172a 0%, #111827 100%);
   color: #dbe7f5;
+}
+
+html[data-bs-theme="dark"] a,
+body[data-bs-theme="dark"] a {
+  color: #93c5fd;
+}
+
+html[data-bs-theme="dark"] a:hover,
+body[data-bs-theme="dark"] a:hover {
+  color: #bfdbfe;
 }
 
 html[data-bs-theme="dark"] .quarto-page,
@@ -319,6 +344,20 @@ body[data-bs-theme="dark"] article,
 body[data-bs-theme="dark"] .quarto-title-block,
 body[data-bs-theme="dark"] .quarto-title-banner,
 body[data-bs-theme="dark"] .page-layout-article {
+  background-color: #111827 !important;
+  color: #dbe7f5 !important;
+}
+
+html[data-bs-theme="dark"] .content,
+body[data-bs-theme="dark"] .content,
+html[data-bs-theme="dark"] .quarto-content,
+body[data-bs-theme="dark"] .quarto-content,
+html[data-bs-theme="dark"] main,
+body[data-bs-theme="dark"] main,
+html[data-bs-theme="dark"] article,
+body[data-bs-theme="dark"] article,
+html[data-bs-theme="dark"] .page-columns,
+body[data-bs-theme="dark"] .page-columns {
   background-color: #111827 !important;
   color: #dbe7f5 !important;
 }
